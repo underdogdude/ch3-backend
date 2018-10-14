@@ -1,0 +1,29 @@
+body {
+  font-family: "Kanit", sans-serif;
+  background: #f4f9fa;
+}
+
+.navbar {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.navbar .nav__logo {
+  padding-left: 1.5rem;
+}
+.navbar .nav-item {
+  padding-left: 1.5rem;
+}
+.navbar .nav__user img {
+  height: 40px;
+  border-radius: 50%;
+}
+.navbar .avatar .avatar__image {
+  background-image: url("../img/user-profile.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
