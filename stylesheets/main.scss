@@ -1,12 +1,43 @@
-$primary-font: 'Kanit', sans-serif;
+$primary-font: 'Prompt', sans-serif;
 $shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
 $circle: 50%;
 
+
+// Color 
+$title-color: #484848;
+$sub-title-color: #989898;
+
+@mixin gradient-33 {
+    background: #91EAE4; 
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #5757ff); 
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #5757ff); 
+}
+@mixin gradient-28 {
+    background:  -webkit-linear-gradient(330deg, #d4fc79 0%, #5ce260 100%);
+    background:  -o-linear-gradient(330deg, #d4fc79 0%, #5ce260 100%);
+    background:  linear-gradient(120deg, #d4fc79 0%, #5ce260 100%);
+}
+@mixin gradient-13 {
+    background:  -webkit-gradient(linear, left top, right top, from(#ffd6ab), to(#ff5757));
+    background:  -webkit-linear-gradient(left, #ffd6ab 0%, #ff5757 100%);
+    background:  -o-linear-gradient(left, #ffd6ab 0%, #ff5757 100%);
+    background:  linear-gradient(to right, #ffd6ab 0%, #ff5757 100%);
+}
+
+@mixin p-t($number) {
+    padding-top: ($number);
+}
 @mixin p-l($number) {
     padding-left: ($number);
 }
 @mixin p-r($number) {
     padding-right: ($number);
+}
+@mixin m-t($number) {
+    margin-top: ($number);
+}
+@mixin m-b($number) {
+    margin-bottom: ($number);
 }
 @mixin m-l($number) {
     margin-left: ($number);
@@ -46,4 +77,71 @@ body {
         }
     }
 }
-   
+
+// Text 
+.text {
+    .text__title {
+        color: $title-color;
+    }
+    .text__sub-title {
+        color: $sub-title-color;
+        @include m-b(0);
+    }
+}
+
+// Dashboard
+
+.dash-box {
+
+    @include gradient-33;
+    position: relative;
+    border-radius: 12px;
+    margin: 10px 0 30px;
+
+    .dash-box-body {
+        text-align: right;
+        padding: 20px 10px 20px;
+
+        .dash-box-count {
+            display: block;
+            font-size: 30px;
+            color: #FFF;
+            font-weight: 300;
+        }
+
+        .dash-box-title {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.81);
+        }
+    }
+    &.dash-box-ch-28 {
+        @include gradient-28;
+    }
+    &.dash-box-ch-13 {
+        @include gradient-13;
+    }
+}
+
+
+// View Section
+.view {
+    @include p-t(30px);
+}
+
+
+// Card
+.card.card-rank {
+    border: 0;
+    box-shadow: $shadow;
+
+    .card__title {
+        font-size: 14px;
+    }
+    .card__sub-title {
+        font-size: 13px;
+    }
+    .thumbnail {
+        width: 40px;
+        height: 100%;
+    }
+}

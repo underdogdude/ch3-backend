@@ -1,5 +1,5 @@
 body {
-  font-family: "Kanit", sans-serif;
+  font-family: "Prompt", sans-serif;
   background: #f4f9fa;
 }
 
@@ -24,6 +24,67 @@ body {
   width: 40px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.text .text__title {
+  color: #484848;
+}
+.text .text__sub-title {
+  color: #989898;
+  margin-bottom: 0;
+}
+
+.dash-box {
+  background: #91EAE4;
+  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #5757ff);
+  background: linear-gradient(to right, #91EAE4, #86A8E7, #5757ff);
+  position: relative;
+  border-radius: 12px;
+  margin: 10px 0 30px;
+}
+.dash-box .dash-box-body {
+  text-align: right;
+  padding: 20px 10px 20px;
+}
+.dash-box .dash-box-body .dash-box-count {
+  display: block;
+  font-size: 30px;
+  color: #FFF;
+  font-weight: 300;
+}
+.dash-box .dash-box-body .dash-box-title {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.81);
+}
+.dash-box.dash-box-ch-28 {
+  background: -webkit-linear-gradient(330deg, #d4fc79 0%, #5ce260 100%);
+  background: -o-linear-gradient(330deg, #d4fc79 0%, #5ce260 100%);
+  background: linear-gradient(120deg, #d4fc79 0%, #5ce260 100%);
+}
+.dash-box.dash-box-ch-13 {
+  background: -webkit-gradient(linear, left top, right top, from(#ffd6ab), to(#ff5757));
+  background: -webkit-linear-gradient(left, #ffd6ab 0%, #ff5757 100%);
+  background: -o-linear-gradient(left, #ffd6ab 0%, #ff5757 100%);
+  background: linear-gradient(to right, #ffd6ab 0%, #ff5757 100%);
+}
+
+.view {
+  padding-top: 30px;
+}
+
+.card.card-rank {
+  border: 0;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.card.card-rank .card__title {
+  font-size: 14px;
+}
+.card.card-rank .card__sub-title {
+  font-size: 13px;
+}
+.card.card-rank .thumbnail {
+  width: 40px;
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
