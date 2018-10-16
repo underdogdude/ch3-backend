@@ -3,8 +3,13 @@ body {
   background: #f4f9fa;
 }
 
+.primary-color {
+  color: #314cff !important;
+}
+
 .navbar {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 .navbar .nav__logo {
   padding-left: 1.5rem;
@@ -43,6 +48,7 @@ body {
   margin: 10px 0 30px;
 }
 .dash-box .dash-box-body {
+  overflow: hidden;
   text-align: right;
   padding: 20px 10px 20px;
 }
@@ -74,7 +80,6 @@ body {
 
 .card.card-rank {
   border: 0;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 }
 .card.card-rank .card__title {
   font-size: 14px;
@@ -85,6 +90,44 @@ body {
 .card.card-rank .thumbnail {
   width: 40px;
   height: 100%;
+}
+.card.card-rank .card-rank__list li {
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+
+  .row-stretch {
+    height: 100vh;
+  }
+  .row-stretch #left, .row-stretch #right {
+    height: 100%;
+    overflow-y: auto;
+  }
+  .row-stretch #right {
+    background: #fff;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 90px;
+    z-index: 0;
+  }
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(102, 102, 102, 0.8);
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
