@@ -14,6 +14,7 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/vendor/bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.standalone.css" />
 
 </head>
 
@@ -23,8 +24,8 @@
         <a class="navbar-brand nav__logo" href="#">
             <img src="./img/ch3-logo.png" width="40px" />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -44,8 +45,8 @@
             </ul>
             <ul class="navbar-nav navbar-right">
                 <li class="nav-item dropdown">
-                    <a class="nav-link avatar dropdown-toggle d-flex align-items-center" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
+                    <a class="nav-link avatar dropdown-toggle d-flex align-items-center" href="#" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="avatar__name">John Doe</span>
                         <div class="avatar__image rounded-circle"></div>
                     </a>
@@ -60,7 +61,7 @@
     </nav>
     <div class="container-fluid">
         <div class="row row-stretch">
-            <div class="col-md-8" id="left">
+            <div class="col-md-8 " id="left">
                 <div class="text pt-4">
                     <h6 class="text__sub-title">Overview
                         <i class="fas fa-table"></i>
@@ -95,13 +96,121 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text pt-1">
+                            <h6 class="text__sub-title">User Logs
+                                <i class="fas fa-users"></i>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col-md-12 pt-1 d-flex justify-content-sm-between flex-sm-row flex-column">
+                        <div class="col-md-6 d-flex">
+                            <div class="form-group mb-0">
+                                <select class="form-control">
+                                    <option>Event Type</option>
+                                    <option>Date Modified</option>
+                                    <option>Name</option>
+                                </select>
+                            </div>
+
+
+                            <div class="form-group has-search ml-4 mb-0">
+                                <span class="fa fa-search form-control-feedback"></span>
+                                <input type="text" class="form-control" placeholder="search">
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-end">
+                            <div class="form-group has-search date mb-0" data-provide="datepicker">
+                                <div class="input-group-addon"><span class="fa fa-calendar-alt form-control-feedback"></span></div>
+                                <input type="text" class="form-control" id="datepicker">
+                            </div>
+                            <button type="button" class="btn btn-outline-primary ml-4">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12 mt-4">
+                        <div class="card table-responsive-md ml-2 mr-2">
+                            <table class="table table-custom table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">Larry the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
             </div>
             <div class="col-md-4 mb-4 pl-0 pr-0" id="right">
                 <div class="tvprogram">
                     <div class="text pt-4 pl-3">
                         <h6 class="text__sub-title"><strong>รายการที่มีคนชื่นชอบมากที่สุด</strong></h6>
                     </div>
-                    <div class="card card-rank">
+                    <div class="card-rank">
                         <ul class="list-group card-rank__list ">
                             <li class="d-flex align-items-center list-group-item">
                                 <img class="mr-3 rounded thumbnail" src="./img/thumbnail-demo.jpg" />
@@ -147,7 +256,7 @@
                     <div class="text pt-4 pl-3">
                         <h6 class="text__sub-title"><strong>รายการย้อนหลังที่มีคนดูมากที่สุด</strong></h6>
                     </div>
-                    <div class="card card-rank">
+                    <div class="card-rank">
                         <ul class="list-group card-rank__list">
                             <li class="d-flex align-items-center list-group-item">
                                 <img class="mr-3 rounded thumbnail" src="./img/thumbnail-demo.jpg" />
@@ -193,7 +302,7 @@
                     <div class="text pt-4 pl-3">
                         <h6 class="text__sub-title"><strong>ข่าวที่มีคนดูมากที่สุด</strong></h6>
                     </div>
-                    <div class="card card-rank">
+                    <div class="card-rank">
                         <ul class="list-group card-rank__list">
                             <li class="d-flex align-items-center list-group-item">
                                 <div class="media-body">
@@ -236,7 +345,7 @@
                     <div class="text pt-4 pl-3">
                         <h6 class="text__sub-title"><strong>คอนเทนต์ออนไลน์ที่มีคนดูมากที่สุด</strong></h6>
                     </div>
-                    <div class="card card-rank">
+                    <div class="card-rank">
                         <ul class="list-group card-rank__list">
                             <li class="d-flex align-items-center list-group-item">
                                 <div class="media-body">
@@ -283,5 +392,15 @@
 
 <script src="./js/vendor/jquery.min.js"></script>
 <script src="./js/vendor/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+
+<script>
+    $('.date').datepicker({
+
+        "format": 'dd/mm/yyyy',
+        "autoclose": true
+
+    }).datepicker("setDate", 'now');
+</script>
 
 </html>

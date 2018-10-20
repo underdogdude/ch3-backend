@@ -78,21 +78,27 @@ body {
   padding-top: 30px;
 }
 
-.card.card-rank {
+.card-rank {
   border: 0;
 }
-.card.card-rank .card__title {
+.card-rank .card__title {
   font-size: 14px;
 }
-.card.card-rank .card__sub-title {
+.card-rank .card__sub-title {
   font-size: 13px;
 }
-.card.card-rank .thumbnail {
+.card-rank .thumbnail {
   width: 40px;
   height: 100%;
 }
-.card.card-rank .card-rank__list li {
+.card-rank .card-rank__list li {
   border: 0;
+}
+
+.card {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  border: 0;
+  border-radius: 8px;
 }
 
 @media (min-width: 768px) {
@@ -103,17 +109,50 @@ body {
   .row-stretch {
     height: 100vh;
   }
-  .row-stretch #left, .row-stretch #right {
+  .row-stretch #left,
+.row-stretch #right {
     height: 100%;
     overflow-y: auto;
+    padding-bottom: 90px;
   }
   .row-stretch #right {
     background: #fff;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
-    padding-bottom: 90px;
     z-index: 0;
   }
 }
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.table-custom {
+  margin-bottom: 0;
+}
+.table-custom thead th {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a4a4a;
+  padding: 15px;
+  text-transform: uppercase;
+  background: #f7f7f7;
+  border: none;
+}
+.table-custom tr {
+  padding: 15px;
+  border-top: #e6e6e6;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
