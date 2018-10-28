@@ -20,7 +20,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-dark dark-bg">
         <a class="navbar-brand nav__logo" href="#">
             <img src="./img/ch3-logo.png" width="40px" />
         </a>
@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CMS -> CH3</a>
+                    <a class="nav-link" href="update-list.html">CMS -> CH3</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Management</a>
@@ -61,7 +61,7 @@
     </nav>
     <div class="container-fluid">
         <div class="row row-stretch">
-            <div class="col-md-8 " id="left">
+            <section class="col-md-9 " id="left">
                 <div class="text pt-4">
                     <h6 class="text__sub-title">Overview
                         <i class="fas fa-table"></i>
@@ -213,14 +213,14 @@
                             </table>
                         </div>
                         <nav aria-label="Page navigation">
-                            <ul class="pagination justify-content-center mt-4">
+                            <ul class="pagination pagination-custom justify-content-center mt-4">
                                 <li class="page-item">
                                     <a class="page-link" href="#" aria-label="Previous">
                                         <span aria-hidden="true">&laquo;</span>
                                         <span class="sr-only">Previous</span>
                                     </a>
                                 </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1 <span class="sr-only">(current)</span></a></li>
                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                                 <li class="page-item">
@@ -233,8 +233,8 @@
                         </nav>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mb-4 pl-0 pr-0" id="right">
+            </section>
+            <section class="col-md-3 mb-4 pl-0 pr-0" id="right">
                 <div class="tvprogram">
                     <div class="text pt-4 pl-3">
                         <h6 class="text__sub-title"><strong>รายการที่มีคนชื่นชอบมากที่สุด</strong></h6>
@@ -412,7 +412,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
 </body>

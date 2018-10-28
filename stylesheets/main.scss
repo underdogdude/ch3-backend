@@ -5,7 +5,8 @@ $circle: 50%;
 
 
 // Color 
-$primary-color: #314cff;
+$primary-color: #3045da;
+$secondary-color: #ed5f5e;
 $title-color: #484848;
 $sub-title-color: #989898;
 
@@ -59,15 +60,29 @@ $sub-title-color: #989898;
 
 body {
     font-family: $primary-font;
-    background: #f4f9fa;
+    background: #f8f9fa;
 }
 
 .primary-color {
     color: $primary-color !important;
 }
 
-.navbar {
+.dark-bg {
+    background: #080a33;
+}
 
+.btn-round {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 13px;
+    line-height: 1.42;
+    border-radius: 15px;
+}
+
+.navbar {
+    height: 55px;
     box-shadow: $shadow;
     z-index: 1;
 
@@ -96,6 +111,38 @@ body {
 
         }
     }
+}
+
+// Breadcumb 
+.bread-box {
+    .breadcrumb {
+        height: 40px;
+
+        .breadcrumb-item {
+            font-size: 14px;
+        }
+    }
+}
+
+// Page Pagination 
+.pagination-custom {
+    .page-item {
+        .page-link {
+            background: transparent;
+            border: none;
+            color: #333;
+        }
+    }
+
+    .page-item.active .page-link,
+    .page-item.disabled .page-link {
+        color: #666;
+    }
+
+    .page-link:hover {
+        color: $secondary-color;
+    }
+
 }
 
 // Text 
@@ -182,7 +229,7 @@ body {
     box-shadow: $shadow;
     border: 0;
     border-radius: 8px;
- 
+
 }
 
 // Split Screen
@@ -193,6 +240,13 @@ body {
 
     .row-stretch {
         height: 100vh;
+
+        .scrollable {
+            height: 100%;
+            overflow-y: auto;
+            padding-bottom: 90px;
+            z-index: 0;
+        }
 
         #left,
         #right {
@@ -232,6 +286,8 @@ body {
 // TABLE 
 .table-custom {
     margin-bottom: 0;
+    font-size: 14px;
+
     thead th {
         font-size: 14px;
         font-weight: 600;
@@ -241,14 +297,48 @@ body {
         background: #f7f7f7;
         border: none;
     }
+
     tr {
         padding: 15px;
         border-top: #e6e6e6;
     }
+
     td {
         color: #4a4a4a;
         padding: 15px;
         font-size: 14px;
+    }
+}
+
+.dataTables_wrapper {
+    .dataTables_paginate {
+        .paginate_button {
+            background: transparent !important;
+            border: transparent !important;
+
+            &.current {
+                color: #666 !important;
+                background: transparent !important;
+                border: transparent !important;
+
+                &:hover {
+                    color: #666 !important;
+                    background: transparent !important;
+                    border: transparent !important;
+                }
+            }
+
+            &:hover,
+            &:active,
+            &.current:active {
+                border: 0px !important;
+                color: $secondary-color !important;
+                box-shadow: none;
+            }
+        }
+    }
+    .dataTables_length {
+        padding-top: 10px;
     }
 }
 
