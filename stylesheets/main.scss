@@ -157,6 +157,11 @@ body {
     }
 }
 
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
 // Dashboard
 
 .dash-box {
@@ -225,11 +230,30 @@ body {
 }
 
 // Card Bootstrap Custom 
-.card {
-    box-shadow: $shadow;
-    border: 0;
-    border-radius: 8px;
+// .card {
+//     box-shadow: $shadow;
+//     border: 0;
+//     border-radius: 8px;
 
+// }
+
+
+// Side Nav 
+.sidenav {
+
+
+    .sidenav-title {
+        a {
+            color: #666;
+        }
+    }
+    .sidenav-collapse {
+        padding-left: 1.5rem;
+
+        a {
+            color: #666 !important;
+        }
+    }
 }
 
 // Split Screen
@@ -343,20 +367,20 @@ body {
 }
 
 
-// Scroll Bar
+// // Scroll Bar
 
-::-webkit-scrollbar {
-    width: 8px;
-}
+// ::-webkit-scrollbar {
+//     width: 8px;
+// }
 
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: rgba(102, 102, 102, .8);
-}
+// ::-webkit-scrollbar-thumb {
+//     -webkit-border-radius: 10px;
+//     border-radius: 10px;
+//     background: rgba(102, 102, 102, .8);
+// }
 
-::-webkit-scrollbar-track {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background-color: #fff;
-}
+// ::-webkit-scrollbar-track {
+//     -webkit-border-radius: 10px;
+//     border-radius: 10px;
+//     background-color: #fff;
+// }
