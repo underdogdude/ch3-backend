@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/vendor/bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/tvguides.css" />
 
 
 
@@ -76,42 +77,48 @@
         <div class="row row-stretch">
             <!-- Side Nav -->
             <div class="col-md-2">
-                
+
                 <div id="accordion" class="sidenav pt-4 pl-2">
                     <div class="sidenav-title">
-                        <a href="#">Update List</a>
+                        <a href="./updatelist.html">Update List</a>
                     </div>
 
                     <div class="sidenav-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                            Channel Master(4)
+                            Channel Master
                         </a>
                     </div>
                     <div id="collapse1" class="panel-collapse collapse in sidenav-collapse">
-                        <a href="#">
-                            Channel & TV Guides
+                        <a href="./tvguides.html">
+                            TV Guides
                         </a>
                     </div>
 
                     <div class="sidenav-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                            ProgramTV Master (4)
+                            ProgramTV Master
                         </a>
                     </div>
                     <div id="collapse2" class="panel-collapse collapse sidenav-collapse">
-                        <a href="#">
-                            ProgramTV Submenu
+                        <a href="./program-category.html">
+                            Program Category
+                        </a>
+                        <a href="./person-category.html">
+                            Program TV
                         </a>
                     </div>
 
                     <div class="sidenav-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                        Contents Master
+                            Contents Master
                         </a>
                     </div>
                     <div id="collapse3" class="panel-collapse collapse sidenav-collapse">
-                        <a href="#">
-                            Contents Submenu
+                        <a href="./content-category.html">
+                            Contents Category
+                        </a>
+                        <a href="./content.html">
+                            Contents
                         </a>
                     </div>
 
@@ -121,8 +128,11 @@
                         </a>
                     </div>
                     <div id="collapse4" class="panel-collapse collapse sidenav-collapse">
-                        <a href="#">
-                            Person Submenu
+                        <a href="./person-category.html">
+                            Person Category
+                        </a>
+                        <a href="./person.html">
+                            Person
                         </a>
                     </div>
 
@@ -132,8 +142,8 @@
                         </a>
                     </div>
                     <div id="collapse5" class="panel-collapse collapse sidenav-collapse">
-                        <a href="#">
-                            Gellery Submenu
+                        <a href="./gallary-category.html">
+                            Gellery Category
                         </a>
                     </div>
                 </div>
@@ -161,9 +171,11 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- 84px is number of "Header (Not  header navbar)" -->
                         <div class="card card-body p-0" style="overflow: auto; height: calc(100% - 84px);">
-                            <table id="myTable" class="table table-custom" style="width:100%; overflow:auto; display: block;border-top: none;">
+
+                            <table id="myTable" class="table table-responsive w-100 table-custom tv-guides-table">
                                 <thead style="display: none !important;">
                                     <tr>
                                         <th></th>
@@ -174,22 +186,68 @@
                                         <th></th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody class="d-table w-100">
                                     <tr>
                                         <td>
-                                            <img src="img/channel-33.png" />
+                                            <img src="img/channel-33.png" style="max-width:120px;" />
                                         </td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                        <td>$320,800</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <p class="mb-0">ช่อง 33 HD</p>
+                                                <span>TV Guide</span>
+                                            </div>
+
+                                        </td>
+                                        <td class="tv-guide-b">
+                                            <div class="d-flex flex-column">
+                                                <div>
+                                                    <p class="guide-name mb-0">เรื่องเด่นเย็นนี้</p>
+                                                </div>
+                                                <div class="text-right">
+                                                    <span class="float-left guide-time">17.00 - 17.15</span>
+                                                    <img src="./img/th-icon.png" />
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="tv-guide-b">
+                                            <div class="d-flex flex-column">
+                                                <div>
+                                                    <p class="guide-name mb-0">เรื่องเด่นเย็นนี้</p>
+                                                </div>
+                                                <div class="text-right">
+                                                    <span class="float-left guide-time">17.00 - 17.15</span>
+                                                    <img src="./img/th-icon.png" />
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="tv-guide-b">
+                                            <div class="d-flex flex-column">
+                                                <div>
+                                                    <p class="guide-name mb-0">เรื่องเด่นเย็นนี้</p>
+                                                </div>
+                                                <div class="text-right">
+                                                    <span class="float-left guide-time">17.00 - 17.15</span>
+                                                    <img src="./img/th-icon.png" />
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="tv-guide-b">
+                                            <div class="d-flex flex-column">
+                                                <div>
+                                                    <p class="guide-name mb-0">เรื่องเด่นเย็นนี้</p>
+                                                </div>
+                                                <div class="text-right">
+                                                    <span class="float-left guide-time">17.00 - 17.15</span>
+                                                    <img src="./img/th-icon.png" />
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="img/channel-28.png" />
+                                            <img src="img/channel-28.png" style="max-width:120px;" />
                                         </td>
-                                        <td>Accountant</td>
+                                        <td></td>
                                         <td>Tokyo</td>
                                         <td>63</td>
                                         <td>2011/07/25</td>
@@ -197,9 +255,9 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="img/channel-13.png" />
+                                            <img src="img/channel-13.png" style="max-width:120px;" />
                                         </td>
-                                        <td>Junior Technical Author</td>
+                                        <td></td>
                                         <td>San Francisco</td>
                                         <td>66</td>
                                         <td>2009/01/12</td>
@@ -207,6 +265,7 @@
                                     </tr>
                                 </tbody>
                             </table>
+
                         </div>
 
 
