@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dashboard</title>
+    <title>TV Guides</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Prompt:400,700" rel="stylesheet">
@@ -68,7 +68,6 @@
 
     <section class="bread-box" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="#">CMS -> CH3</a></li>
             <li class="breadcrumb-item active" aria-current="page">Channel & TV Guides</li>
         </ol>
     </section>
@@ -90,7 +89,7 @@
                     </div>
                     <div id="collapse1" class="panel-collapse collapse in sidenav-collapse">
                         <a href="./tvguides.html">
-                            TV Guides
+                            Channel & TV Guides
                         </a>
                     </div>
 
@@ -187,7 +186,7 @@
                                     </tr>
                                 </thead>
                                 <tbody class="d-table w-100">
-                                    <tr>
+                                    <tr class="tr-link" data-url="./tvguides-view.html">
                                         <td>
                                             <div class="tvg-img">
 
@@ -245,7 +244,7 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr class="tr-link" data-url="./tvguides-view.html">
                                         <td>
                                             <div class="tvg-img">
 
@@ -303,7 +302,7 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr class="tr-link" data-url="./tvguides-view.html">
                                             <td>
                                                 <div class="tvg-img">
     
@@ -454,12 +453,7 @@
 <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
 <script>
-    // $(document).ready(function () {
-    //     $('#myTable').DataTable({
-    //         "dom": '<"top"ift>rt<"bottom"pl><"clear">',
-    //         "pagingType": "full_numbers"
-    //     });
-    // });
+  
     $(document).ready(function () {
         $('#myTable2').DataTable({
             "dom": '<"top">rt<"bottom"><"clear">',
@@ -487,6 +481,15 @@
         `;
     }
     table_body.append(row);
+
+
+    // Clickable Row in TVG Table
+    $(document).ready(function($) {
+        $(".tr-link").click(function() {
+            window.document.location = $(this).data("url");
+        });
+    });
+
 </script>
 
 </html>
