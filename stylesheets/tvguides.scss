@@ -10,16 +10,50 @@
         padding: 10px 0 ;
         width: 100%;
         td {
-            border-right: 1px solid #bdbdbd;
-            padding: 10px 5px;
+            padding: 10px 2px;
             &:first-child {
                 width: 120px;
             }
             &.tv-guide-b{
                 min-width: 104px;
-                background: -webkit-gradient(linear, left top, right top, color-stop(0%, #a1c4fd), color-stop(100%, #c2e9fb));
+                .guide-name {
+                    color: $primary-color;
+                }   
+                .guide-time {
+                    font-size: 12px;
+                    color: #333;
+                    display: inline-block;
+                }             
             }
         }
         
     }
 }  
+.tvg-img {
+    padding-top: 4px;
+}
+.tvg-detail {
+    padding-top: 8px;
+    p {
+
+    }
+    span {
+        font-size: 12px;
+    }
+}
+
+.tvg-33 {
+    border-left: 3px solid $ch33-color;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #a1c4fd), color-stop(100%, #c2e9fb));
+    padding: 6px;
+}
+.tvg-28 {
+    border-left: 3px solid $ch28-color;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #96e6a1), color-stop(100%, #d4fc79));
+    padding: 6px;
+}
+.tvg-13 {
+    border-left: 3px solid $ch13-color;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff9a9e), color-stop(100%, #fecfef));
+    padding: 6px;
+}

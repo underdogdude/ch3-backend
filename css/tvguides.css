@@ -243,15 +243,50 @@ body {
   width: 100%;
 }
 .tv-guides-table tr td {
-  border-right: 1px solid #bdbdbd;
-  padding: 10px 5px;
+  padding: 10px 2px;
 }
 .tv-guides-table tr td:first-child {
   width: 120px;
 }
 .tv-guides-table tr td.tv-guide-b {
   min-width: 104px;
+}
+.tv-guides-table tr td.tv-guide-b .guide-name {
+  color: #3045da;
+}
+.tv-guides-table tr td.tv-guide-b .guide-time {
+  font-size: 12px;
+  color: #333;
+  display: inline-block;
+}
+
+.tvg-img {
+  padding-top: 4px;
+}
+
+.tvg-detail {
+  padding-top: 8px;
+}
+.tvg-detail span {
+  font-size: 12px;
+}
+
+.tvg-33 {
+  border-left: 3px solid #3045da;
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #a1c4fd), color-stop(100%, #c2e9fb));
+  padding: 6px;
+}
+
+.tvg-28 {
+  border-left: 3px solid #00b64d;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #96e6a1), color-stop(100%, #d4fc79));
+  padding: 6px;
+}
+
+.tvg-13 {
+  border-left: 3px solid #ed5f5e;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff9a9e), color-stop(100%, #fecfef));
+  padding: 6px;
 }
 
 /*# sourceMappingURL=tvguides.css.map */
