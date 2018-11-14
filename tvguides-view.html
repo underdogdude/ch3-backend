@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
 
-    <!-- CSS -->
+    <!-- Vendor CSS  -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/vendor/bootstrap.css" />
+    <link href='css/vendor/fullcalendar.css' rel='stylesheet' />
+    <link href='css/vendor/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/tvguides.css" />
 
@@ -149,13 +152,55 @@
             <!-- MAIN -->
             <div class="col-md-10 pt-3 scrollable">
                 <div class="row">
+                    <div class="col-md-8">
+                        <div class="col-md-12">
+                            Name :
+                            <input type="text" value="ช่อง 33" />
+                            <span class="sub-title ml-2">
+                                [xxx-12345]
+                            </span>
+                        </div>
+                        <div class="col-md-12 text-right">
+
+                            <span class='label label-info' id="upload-file-info"></span>
+                            <label class="btn btn-primary " for="my-file-selector">
+                                <input id="my-file-selector" type="file" style="display:none" onchange="$('#upload-file-info').html(this.files[0].name)">
+                                <i class="fas fa-upload text-white"></i> Upload
+                            </label>
+
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <span class='label label-info' id="upload-file-info2"></span>
+                            <label class="btn btn-primary float-right" for="my-file-selector2">
+                                <input id="my-file-selector2" type="file" style="display:none" onchange="$('#upload-file-info2').html(this.files[0].name)">
+                                <i class="fas fa-upload"></i> Upload
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <p class="sub-title ">Last Update : 2018-08-10 16:20:13</p>
+                        <p>
+                            Status :
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </p>
+                        <p>
+                            Publishing :
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-md-12">
-                        Name :
-                        <input type="text" value="ช่อง 33" />
-                        <span class="sub-title ml-2">
-                            [xxx-12345]
-                        </span>
-                        <p class="sub-title float-right">Last Update : 2018-08-10 16:20:13</p>
+                        <div class="calendar-wrap card m-3 p-3">
+                            <div id='calendar'></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -166,8 +211,85 @@
 
 
 
+<script src='./js/vendor/moment.min.js'></script>
 <script src="./js/vendor/jquery.min.js"></script>
 <script src="./js/vendor/bootstrap.js"></script>
+<script src='./js/vendor/fullcalendar.min.js'></script>
 
+<script>
+    $(document).ready(function () {
+
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'agendaDay,agendaWeek,month'
+            },
+
+            defaultView: 'agendaWeek',
+            defaultDate: '2018-03-12',
+            navLinks: true, // can click day/week names to navigate views
+            editable: true,
+            weekNumbers: true,
+            eventLimit: true, // allow "more" link when too many events
+            events: [{
+                    title: 'All Day Event',
+                    start: '2018-03-01',
+                },
+                {
+                    title: 'Long Event',
+                    start: '2018-03-07',
+                    end: '2018-03-10'
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: '2018-03-09T16:00:00'
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: '2018-03-16T16:00:00'
+                },
+                {
+                    title: 'Conference',
+                    start: '2018-03-11',
+                    end: '2018-03-13'
+                },
+                {
+                    title: 'Meeting',
+                    start: '2018-03-12T10:30:00',
+                    end: '2018-03-12T12:30:00'
+                },
+                {
+                    title: 'Lunch',
+                    start: '2018-03-12T12:00:00'
+                },
+                {
+                    title: 'Meeting',
+                    start: '2018-03-12T14:30:00'
+                },
+                {
+                    title: 'Happy Hour',
+                    start: '2018-03-12T17:30:00'
+                },
+                {
+                    title: 'Dinner',
+                    start: '2018-03-12T20:00:00'
+                },
+                {
+                    title: 'Birthday Party',
+                    start: '2018-03-13T07:00:00'
+                },
+                {
+                    title: 'Click for Google',
+                    url: 'http://google.com/',
+                    start: '2018-03-28'
+                }
+            ]
+        });
+
+    });
+</script>
 
 </html>
