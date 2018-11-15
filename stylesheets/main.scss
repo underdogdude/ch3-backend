@@ -80,6 +80,12 @@ input[type="text"] {
 .primary-color {
     color: $primary-color !important;
 }
+.success-color {
+    color: $ch28-color !important;
+}
+.danger-color {
+    color: $ch13-color !important;
+}
 
 .dark-bg {
     background: #080a33;
@@ -351,6 +357,10 @@ input[type="text"] {
         color: #4a4a4a;
         padding: 15px;
         font-size: 14px;
+    }    
+    .tr-link:hover {
+        background: #f8f9fa;
+        cursor: pointer;
     }
 }
 
@@ -446,6 +456,19 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+
+// List in updatelist-tvguides.html
+.list-check {
+    overflow: auto;
+    .list-group-item {
+        padding: 0.5rem 1rem;
+        &:hover{
+            background: #f8f9fa;
+            cursor: pointer;
+        }
+    }
 }
 
 // // Scroll Bar

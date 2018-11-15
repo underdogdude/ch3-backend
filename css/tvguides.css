@@ -17,6 +17,14 @@ input[type=text] {
   color: #3045da !important;
 }
 
+.success-color {
+  color: #00b64d !important;
+}
+
+.danger-color {
+  color: #ed5f5e !important;
+}
+
 .dark-bg {
   background: #080a33;
 }
@@ -223,6 +231,10 @@ input[type=text] {
   padding: 15px;
   font-size: 14px;
 }
+.table-custom .tr-link:hover {
+  background: #f8f9fa;
+  cursor: pointer;
+}
 
 .dataTables_wrapper .dataTables_paginate .paginate_button {
   background: transparent !important;
@@ -307,6 +319,13 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.list-check {
+  overflow: auto;
+}
+.list-check .list-group-item {
+  padding: 0.5rem 1rem;
+}
+
 .tv-guides-table {
   width: 100%;
   overflow: auto;
@@ -334,10 +353,6 @@ input:checked + .slider:before {
   font-size: 12px;
   color: #333;
   display: inline-block;
-}
-.tv-guides-table tr.tr-link:hover {
-  background: #f8f9fa;
-  cursor: pointer;
 }
 
 .tvg-img {

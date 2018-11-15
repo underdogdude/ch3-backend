@@ -422,7 +422,7 @@
                             </button>
                         </h1>
                         <div class="card" style="max-height: 500px; overflow: auto;">
-                            <table id="myTable2" class="table table-striped table-bordered table-custom" style="width:100%">
+                            <table id="myTable2" class="table table-bordered table-custom hover" style="width:100%">
                                 <thead>
                                     <tr>
                                         <th>#</th>
@@ -468,13 +468,13 @@
 
         row +=
             `
-            <tr>
+            <tr class="tr-link" data-url="./updatelist-tvguides.html">
                 <td> ${ i } </td>
                 <td> 8/10/2018 16:${ i } </td>
                 <td>ช่อง13 (2)</td>
                 <td>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" />
+                        <i class="fas fa-check-circle primary-color"></i>
                     </div>
                 </td>
             </tr>
