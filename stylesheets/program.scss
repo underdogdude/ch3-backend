@@ -1,0 +1,32 @@
+@import 'main';
+
+// Program Table
+.prog {
+    .prog__thumb {
+        img {
+
+            max-width: 80px;
+            height: auto;
+        }
+    }
+    .prog__detail {
+        p {
+            margin-bottom: 0;
+        }
+        .prog__detail-title {
+            color: $primary-color;
+            font-size: 18px;
+        }
+        .prog__detail-subtitle {
+            color: $sub-title-color;
+            font-size: 11px;
+        }
+    }
+    .prog__badge {
+        div {
+            .badge {
+            height: 37px;
+            }
+        }
+    }
+}

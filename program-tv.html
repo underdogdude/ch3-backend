@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TV Guides</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Prompt:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/vendor/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/program.css" />
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark dark-bg">
+        <a class="navbar-brand nav__logo" href="#">
+            <img src="./img/ch3-logo.png" width="40px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav  mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="dashboard.html">Dashboard
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="updatelist.html">CMS -> CH3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Management</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link avatar dropdown-toggle d-flex align-items-center" href="#" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="avatar__name">John Doe</span>
+                        <div class="avatar__image rounded-circle"></div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="b">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Bread Crumb -->
+
+    <section class="bread-box" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="./updatelist.html">CMS -> CH3</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Program TV</li>
+        </ol>
+    </section>
+
+    <div class="container-fluid">
+        <div class="row row-stretch">
+            <!-- Side Nav -->
+            <div class="col-md-2">
+
+                <div id="accordion" class="sidenav pt-4 pl-2">
+                    <div class="sidenav-title">
+                        <a href="./updatelist.html">Update List</a>
+                    </div>
+
+                    <div class="sidenav-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            Channel Master
+                        </a>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in sidenav-collapse">
+                        <a href="./tvguides.html">
+                            Channel & TV Guides
+                        </a>
+                    </div>
+
+                    <div class="sidenav-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            ProgramTV Master
+                        </a>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse sidenav-collapse">
+                        <a href="./program-category.html">
+                            Program Category
+                        </a>
+                        <a href="./program-tv.html">
+                            Program TV
+                        </a>
+                    </div>
+
+                    <div class="sidenav-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                            Contents Master
+                        </a>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse sidenav-collapse">
+                        <a href="./content-category.html">
+                            Contents Category
+                        </a>
+                        <a href="./content.html">
+                            Contents
+                        </a>
+                    </div>
+
+                    <div class="sidenav-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                            Person Master
+                        </a>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse sidenav-collapse">
+                        <a href="./person-category.html">
+                            Person Category
+                        </a>
+                        <a href="./person.html">
+                            Person
+                        </a>
+                    </div>
+
+                    <div class="sidenav-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                            Gallery Master
+                        </a>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse sidenav-collapse">
+                        <a href="./gallary-category.html">
+                            Gellery Category
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Center -->
+            <div class="col-md-10 pt-3 scrollable">
+                <div class="row">
+                    <div class="col-md-8 p-0">
+                        <div class="row">
+                            <div class="col-md-5 d-flex align-items-center">
+                                <h1 class="title">Program TV</h1>
+                            </div>
+                            <div class="col-md-7 d-flex align-items-center form-group">
+                                <span class="w-100 text-right pr-1">Filter : </span>
+                                <select class="form-control">
+                                    <option>All-Type</option>
+                                    <option>ภาพยนตร์ - ซีรี่ย์</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="form-group w-100 has-search ml-4 mb-0">
+                                    <span class="fa fa-search form-control-feedback"></span>
+                                    <input type="text" class="form-control" placeholder="search">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- TODO Responsive in Height will Break App -->
+                        <!-- 84px is number of "Header (Not  header navbar)" -->
+                        <div class="card card-body p-0" style="overflow: auto; height: calc(100% - 84px);">
+
+                            <table id="myTable" class="table table-responsive w-100 table-custom prog">
+                                <thead style="display: none !important;">
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="d-table w-100">
+                                    <tr class="tr-link">
+                                        <td class="prog__thumb"  style="width: 10%;">
+                                            <img src="img/program-thumbnail.jpg" />
+                                        </td>
+                                        <td class="prog__detail">
+                                            <p class="prog__detail-title">ศึก 12 ราศี</p>
+                                            <span class="prog__detail-subtitle">1,234 views | 12 Episodes | Last Update : August 12, 2018</span>
+                                            <p class="tag">TV Guide</p>
+                                        </td>
+                                      
+                                        <td class="prog-badge" style="width: 20%;">
+                                            <div class="d-flex flex-column ">
+                                                <a href="#" class="badge badge-primary">Primary</a>
+                                                <a href="#" class="badge badge-primary">Primary</a>
+                                                <a href="#" class="badge badge-primary">Primary</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                   
+                                </tbody>
+                            </table>
+
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col-md-4 d-flex align-items-center">
+                                <span class="pr-1">Show : </span>
+                                <div class=" form-group mt-3">
+                                    <select class="form-control">
+                                        <option>10</option>
+                                        <option>20</option>
+                                        <option>30</option>
+                                        <option>50</option>
+                                        <option>100</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-8 ">
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination pagination-custom justify-content-end mt-4">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">First</span>
+                                                <span class="sr-only">First</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">Previous</span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1 <span class="sr-only">(current)</span></a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">Next</span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">Last</span>
+                                                <span class="sr-only">Last</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <h1 class="title"> Update Lists
+                            <button class="btn btn-round btn-outline-primary float-right">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </h1>
+                        <div class="card" style="max-height: 500px; overflow: auto;">
+                            <table id="myTable2" class="table table-bordered table-custom hover" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Update Datetime</th>
+                                        <th>Name List</th>
+                                        <th>Priority</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="data">
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+
+
+<script src="./js/vendor/jquery.min.js"></script>
+<script src="./js/vendor/bootstrap.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+<script>
+  
+    $(document).ready(function () {
+        $('#myTable2').DataTable({
+            "dom": '<"top">rt<"bottom"><"clear">',
+            "paging": false
+        });
+    });
+
+    var table_body = $("#data");
+    var row = "";
+
+    for (var i = 1; i < 50; i++) {
+
+        row +=
+            `
+            <tr class="tr-link" data-url="./updatelist-tvguides.html">
+                <td> ${ i } </td>
+                <td> 8/10/2018 16:${ i } </td>
+                <td>ช่อง13 (2)</td>
+                <td>
+                    <div class="form-check">
+                        <i class="fas fa-check-circle primary-color"></i>
+                    </div>
+                </td>
+            </tr>
+        `;
+    }
+    table_body.append(row);
+
+
+    // Clickable Row in TVG Table
+    $(document).ready(function($) {
+        $(".tr-link").click(function() {
+            window.document.location = $(this).data("url");
+        });
+    });
+
+</script>
+
+</html>
