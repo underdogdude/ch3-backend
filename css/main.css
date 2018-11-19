@@ -158,6 +158,11 @@ input[type=text] {
   border: 0;
 }
 
+.card-footer-cus {
+  background: transparent;
+  border: none;
+}
+
 .sidenav .sidenav-title a {
   color: #666;
 }

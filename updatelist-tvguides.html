@@ -11,8 +11,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
 
-    <!-- CSS -->
+    <!-- CSS Vendor -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/vendor/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+    <link href='css/vendor/fullcalendar.css' rel='stylesheet' />
+    <link href='css/vendor/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/tvguides.css" />
 
@@ -75,9 +79,9 @@
     </section>
     <section class="row-stretch">
         <div class="container-fluid scrollable">
-            <section class="row" style="height: 450px;">
+            <section class="row">
                 <!-- Side Nav -->
-                <div class="col-md-4">
+                <div class="col-md-4 " style="max-height: 450px;">
                     <div class="card h-100 p-3 mt-3">
                         <h2 class="title">[xxx-12345] ช่อง 33</h2>
                         <div class="form-group">
@@ -90,80 +94,123 @@
                         </div>
                         <div class="card h-100 list-check">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Morbi leo risus</li>
-                                <li class="list-group-item">Porta ac consectetur ac</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Morbi leo risus</li>
-                                <li class="list-group-item">Porta ac consectetur ac</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
                             </ul>
 
                         </div>
                     </div>
                 </div>
                 <!-- Main -->
-                <div class="col-md-8 ">
+                <div class="col-md-8 " style="max-height: 450px;">
                     <div class="card p-3 mt-3 h-100">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="col-md-12">
-                                    Name :
-                                    <input type="text" value="ช่อง 33" />
-                                    <span class="sub-title ml-2">
-                                        [xxx-12345]
-                                    </span>
-                                </div>
-                                <div class="col-md-12 text-right">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="col-md-12">
+                                        Name :
+                                        <input type="text" value="ช่อง 33" />
+                                        <span class="sub-title ml-2">
+                                            [xxx-12345]
+                                        </span>
+                                    </div>
+                                    <div class="col-md-12 text-right">
 
-                                    <span class='label label-info' id="upload-file-info"></span>
-                                    <label class="btn btn-primary " for="my-file-selector">
-                                        <input id="my-file-selector" type="file" style="display:none" onchange="$('#upload-file-info').html(this.files[0].name)">
-                                        <i class="fas fa-upload text-white"></i> Upload
-                                    </label>
+                                        <span class='label label-info' id="upload-file-info"></span>
+                                        <label class="btn btn-primary " for="my-file-selector">
+                                            <input id="my-file-selector" type="file" style="display:none" onchange="$('#upload-file-info').html(this.files[0].name)">
+                                            <i class="fas fa-upload text-white"></i> Upload
+                                        </label>
 
+                                    </div>
+                                    <div class="col-md-12 text-right">
+                                        <span class='label label-info' id="upload-file-info2"></span>
+                                        <label class="btn btn-primary float-right" for="my-file-selector2">
+                                            <input id="my-file-selector2" type="file" style="display:none" onchange="$('#upload-file-info2').html(this.files[0].name)">
+                                            <i class="fas fa-upload"></i> Upload
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="col-md-12 text-right">
-                                    <span class='label label-info' id="upload-file-info2"></span>
-                                    <label class="btn btn-primary float-right" for="my-file-selector2">
-                                        <input id="my-file-selector2" type="file" style="display:none" onchange="$('#upload-file-info2').html(this.files[0].name)">
-                                        <i class="fas fa-upload"></i> Upload
-                                    </label>
+                                <div class="col-md-4 text-right">
+                                    <p class="sub-title ">Last Update : 2018-08-10 16:20:13</p>
+                                    <p>
+                                        Status :
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        Publishing :
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="col-md-4 text-right">
-                                <p class="sub-title ">Last Update : 2018-08-10 16:20:13</p>
-                                <p>
-                                    Status :
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                    </label>
-                                </p>
-                                <p>
-                                    Publishing :
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                    </label>
-                                </p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12 text-right">
-                                <button class="btn btn-light danger-color  text-center">
-                                    <i class="fas fa-times"></i> <br />
-                                    Cancel Change
-                                </button>
-                                <button class="btn btn-light success-color  text-center">
-                                    <i class="fas fa-check"></i> <br />
-                                    Confirm Change
-                                </button>
+                        <div class="card-footer card-footer-cus p-0">
+                            <div class="row">
+                                <div class="col-md-12 text-right">
+                                    <button class="btn btn-light danger-color  text-center">
+                                        <i class="fas fa-times"></i> <br />
+                                        Cancel Change
+                                    </button>
+                                    <button class="btn btn-light success-color  text-center">
+                                        <i class="fas fa-check"></i> <br />
+                                        Confirm Change
+                                    </button>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -171,110 +218,261 @@
 
             <hr class="mt-5" />
 
-            <section class="row pb-5">
-                <!-- Side Nav -->
+            <section class="row ">
+                <!-- Side Nav1 -->
                 <div class="col-md-4">
                     <div class="card h-100 p-3 mt-3">
-                        <h2 class="title">[xxx-12345] ช่อง 33</h2>
-                        <div class="form-group">
-                            <span class="sub-title">Update List :</span>
-                            <select class="form-control">
-                                <option value="">2018-08-10 11:20:12</option>
-                                <option value="">1</option>
-                                <option value="">1</option>
-                            </select>
-                        </div>
+                        <h2 class="title">Schedule</h2>
+
                         <div class="card h-100 list-check">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Morbi leo risus</li>
-                                <li class="list-group-item">Porta ac consectetur ac</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Morbi leo risus</li>
-                                <li class="list-group-item">Porta ac consectetur ac</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" aria-label="">
+                                    เรื่องเล่าเช้านี้
+                                </li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
-                <!-- Main -->
+                <!-- Main2 -->
                 <div class="col-md-8 ">
                     <div class="card p-3 mt-3 h-100">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="col-md-12">
-                                    Name :
-                                    <input type="text" value="ช่อง 33" />
-                                    <span class="sub-title ml-2">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="row">
+
+                                        <div class="col-md-2 p-0 text-center">
+                                            Name :
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" value="ช่อง 33" class="form-control" />
+                                        </div>
+                                        <div class="col-md-2 p-0 text-center">
+                                            Category :
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" value="ช่อง 33" class="form-control" />
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-3">
+
+                                        <div class="col-md-2 p-0 text-center">
+                                            Block :
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" value="ช่อง 33" class="form-control" />
+                                        </div>
+                                        <div class="col-md-2 p-0 text-center">
+                                            ProgramNA :
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" value="ช่อง 33" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 p-0 text-right">
+                                    <span class="sub-title ml-2 text-primary">
                                         [xxx-12345]
                                     </span>
+                                    <p class="sub-title ">Last Update : 2018-08-10 16:20:13</p>
+                                    <p>
+                                        Status :
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </p>
                                 </div>
-                                <div class="col-md-12 text-right">
 
-                                    <span class='label label-info' id="upload-file-info"></span>
-                                    <label class="btn btn-primary " for="my-file-selector">
-                                        <input id="my-file-selector" type="file" style="display:none" onchange="$('#upload-file-info').html(this.files[0].name)">
-                                        <i class="fas fa-upload text-white"></i> Upload
-                                    </label>
-
+                                <div class="row">
+                                    <div class="col-md-2  p-0"></div>
+                                    <div class="col-md-10 row border p-2">
+                                        <div class="col-md-5">
+                                            <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
+                                                <input type="text" class="form-control datetimepicker-input"
+                                                    data-target="#datetimepicker7" />
+                                                <div class="input-group-append" data-target="#datetimepicker7"
+                                                    data-toggle="datetimepicker">
+                                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 text-center">
+                                            Until
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="input-group date" id="datetimepicker8" data-target-input="nearest">
+                                                <input type="text" class="form-control datetimepicker-input"
+                                                    data-target="#datetimepicker8" />
+                                                <div class="input-group-append" data-target="#datetimepicker8"
+                                                    data-toggle="datetimepicker">
+                                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-12 text-right">
-                                    <span class='label label-info' id="upload-file-info2"></span>
-                                    <label class="btn btn-primary float-right" for="my-file-selector2">
-                                        <input id="my-file-selector2" type="file" style="display:none" onchange="$('#upload-file-info2').html(this.files[0].name)">
-                                        <i class="fas fa-upload"></i> Upload
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-4 text-right">
-                                <p class="sub-title ">Last Update : 2018-08-10 16:20:13</p>
-                                <p>
-                                    Status :
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                    </label>
-                                </p>
-                                <p>
-                                    Publishing :
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                    </label>
-                                </p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12 text-right">
-                                <button class="btn btn-light danger-color  text-center">
-                                    <i class="fas fa-times"></i> <br />
-                                    Cancel Change
-                                </button>
-                                <button class="btn btn-light success-color  text-center">
-                                    <i class="fas fa-check"></i> <br />
-                                    Confirm Change
-                                </button>
+                        <div class="card-footer card-footer-cus">
+                            <div class="row">
+                                <div class="col-md-12 text-right">
+                                    <button class="btn btn-light danger-color  text-center">
+                                        <i class="fas fa-times"></i> <br />
+                                        Cancel Change
+                                    </button>
+                                    <button class="btn btn-light success-color  text-center">
+                                        <i class="fas fa-check"></i> <br />
+                                        Confirm Change
+                                    </button>
+                                </div>
                             </div>
+                        </div>
+                        <hr />
+                        <div class="calendar-wrap card m-3 p-3">
+                            <div id='calendar'></div>
                         </div>
                     </div>
                 </div>
             </section>
+
+
+            <div class="row pb-5 pt-5">
+                <div class="col-md-12 text-right">
+                    <button class="btn btn-danger">
+                        <i class="fas fa-times"></i> Cancel
+                    </button>
+                    <button class="btn btn-primary">
+                        <i class="far fa-save"></i> Update Comfirmed Data
+                    </button>
+                </div>
+            </div>
+
+
         </div>
     </section>
-
 </body>
 
 
 
 <script src="./js/vendor/jquery.min.js"></script>
 <script src="./js/vendor/bootstrap.js"></script>
+<script src="./js/vendor/moment.min.js"></script>
+<script src='./js/vendor/fullcalendar.min.js'></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+
 
 <script>
+    $("li.list-group-item").click(function (e) {
+        var cb = $(this).find(":checkbox")[0];
+        if (e.target != cb) cb.checked = !cb.checked;
+        $(this).toggleClass("selected", cb.checked);
+    });
+    $(function () {
+        $('#datetimepicker7').datetimepicker();
+        $('#datetimepicker8').datetimepicker({
+            useCurrent: false
+        });
+        $("#datetimepicker7").on("change.datetimepicker", function (e) {
+            $('#datetimepicker8').datetimepicker('minDate', e.date);
+        });
+        $("#datetimepicker8").on("change.datetimepicker", function (e) {
+            $('#datetimepicker7').datetimepicker('maxDate', e.date);
+        });
+    });
 
+    $(document).ready(function () {
+
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'agendaDay,agendaWeek,month'
+            },
+
+            defaultView: 'agendaWeek',
+            defaultDate: '2018-03-12',
+            navLinks: true, // can click day/week names to navigate views
+            editable: true,
+            weekNumbers: true,
+            eventLimit: true, // allow "more" link when too many events
+            events: [{
+                    title: 'All Day Event',
+                    start: '2018-03-01',
+                },
+                {
+                    title: 'Long Event',
+                    start: '2018-03-07',
+                    end: '2018-03-10'
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: '2018-03-09T16:00:00'
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: '2018-03-16T16:00:00'
+                },
+                {
+                    title: 'Conference',
+                    start: '2018-03-11',
+                    end: '2018-03-13'
+                },
+                {
+                    title: 'Meeting',
+                    start: '2018-03-12T10:30:00',
+                    end: '2018-03-12T12:30:00'
+                },
+                {
+                    title: 'Lunch',
+                    start: '2018-03-12T12:00:00'
+                },
+                {
+                    title: 'Meeting',
+                    start: '2018-03-12T14:30:00'
+                },
+                {
+                    title: 'Happy Hour',
+                    start: '2018-03-12T17:30:00'
+                },
+                {
+                    title: 'Dinner',
+                    start: '2018-03-12T20:00:00'
+                },
+                {
+                    title: 'Birthday Party',
+                    start: '2018-03-13T07:00:00'
+                },
+                {
+                    title: 'Click for Google',
+                    url: 'http://google.com/',
+                    start: '2018-03-28'
+                }
+            ]
+        });
+
+    });
 </script>
 
 </html>
