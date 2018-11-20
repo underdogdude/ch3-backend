@@ -9,23 +9,53 @@
             height: auto;
         }
     }
+
     .prog__detail {
         p {
             margin-bottom: 0;
         }
+
         .prog__detail-title {
             color: $primary-color;
             font-size: 18px;
         }
+
         .prog__detail-subtitle {
             color: $sub-title-color;
             font-size: 11px;
+            display: block;
+            line-height: 1.5;
+        }
+        .prog__detail-img {
+            max-width: 100%;
+            width: 80px;
         }
     }
+
     .prog__badge {
-        div {
-            .badge {
-            height: 37px;
+        .prog__badge-item {
+            margin-top:4px;
+            height: 22px;
+            padding-top: 5px;
+        }
+    }
+
+    .prog__tag {
+        list-style: none;
+        padding: 0;
+        margin: 5px 0 0;
+        color: #707070;
+        font-size: 12px;
+
+        .prog__tag-item {
+            display: inline-block;
+
+            +.prog__tag-item::before {
+                display: inline-block;
+                padding-right: 2px;
+                padding-left: 0px;
+                color: #6c757d;
+                content: ",";
             }
         }
     }

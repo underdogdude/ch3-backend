@@ -349,9 +349,34 @@ input:checked + .slider:before {
 .prog .prog__detail .prog__detail-subtitle {
   color: #989898;
   font-size: 11px;
+  display: block;
+  line-height: 1.5;
 }
-.prog .prog__badge div .badge {
-  height: 37px;
+.prog .prog__detail .prog__detail-img {
+  max-width: 100%;
+  width: 80px;
+}
+.prog .prog__badge .prog__badge-item {
+  margin-top: 4px;
+  height: 22px;
+  padding-top: 5px;
+}
+.prog .prog__tag {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+  color: #707070;
+  font-size: 12px;
+}
+.prog .prog__tag .prog__tag-item {
+  display: inline-block;
+}
+.prog .prog__tag .prog__tag-item + .prog__tag-item::before {
+  display: inline-block;
+  padding-right: 2px;
+  padding-left: 0px;
+  color: #6c757d;
+  content: ",";
 }
 
 /*# sourceMappingURL=program.css.map */
