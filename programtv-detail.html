@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
 
-    <!-- CSS -->
+    <!-- Vendor CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/vendor/bootstrap.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/program.css" />
 
@@ -157,227 +159,476 @@
             </div>
             <!-- Center -->
             <div class="col-md-10 pt-3 scrollable">
-                <div class="card p-3 mb-5">
+                <div class="card p-3 mb-5 mt-3">
                     <form action="">
-                        <div class="row ">
+                        <section>
+                            <div class="row ">
 
-                            <div class="col-md-6 order-2 order-md-1">
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Name</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control form-control-sm">
+                                <div class="col-md-6 order-2 order-md-1">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="inputPassword" class="col-sm-3 col-form-label col-form-label-sm">Summary</label>
-                                    <div class="col-sm-9">
-                                        <textarea type="text" class="form-control form-control-sm"></textarea>
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-3 col-form-label col-form-label-sm">Summary</label>
+                                        <div class="col-sm-9">
+                                            <textarea type="text" class="form-control form-control-sm"></textarea>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="form-group row">
-                                    <label for="inputPassword" class="col-sm-3 col-form-label col-form-label-sm">Description</label>
-                                    <div class="col-sm-9">
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-3 col-form-label col-form-label-sm">Description</label>
+                                        <div class="col-sm-9">
 
-                                        <textarea type="text" class="form-control form-control-sm"></textarea>
+                                            <textarea type="text" class="form-control form-control-sm"></textarea>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Category</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control form-control-sm">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Category</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Tag</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control form-control-sm">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Tag</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Keyword</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control form-control-sm">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Keyword</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Artist</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control form-control-sm">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Artist</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
                                     </div>
-                                </div>
 
+                                </div>
+                                <div class="col-md-6 order-1 order-md-2">
+
+                                    <div style="overflow: hidden;">
+
+                                        <h6 class="subtitle float-left"> [xxxx-1234] </h6>
+                                        <span class="subtitle float-right">
+                                            Last Update : 2018-08-10 16:20:13
+                                        </span>
+
+                                        <div class="clearfix"></div>
+
+                                        <p class="float-right mt-3 mb-0">
+                                            Status
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-md-8">
+                                            <div class="img-responsive-16by9">
+                                                <img src="./img/program-thumbnail.jpg" style="max-width: 100%" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="./img/program-thumbnail.jpg" style="max-width: 100%; " />
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-3">
+                                            IMG 16:9
+                                        </div>
+                                        <div class="col">
+                                            <span class='label label-info' id="upload-file-info"></span>
+                                            <label class="btn btn-primary " for="my-file-selector">
+                                                <input id="my-file-selector" type="file" style="display:none" onchange="$('#upload-file-info').html(this.files[0].name)">
+                                                <i class="fas fa-upload text-white"></i> Upload
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            IMG 1:1
+                                        </div>
+                                        <div class="col">
+                                            <span class='label label-info' id="upload-file-info"></span>
+                                            <label class="btn btn-primary " for="my-file-selector">
+                                                <input id="my-file-selector" type="file" style="display:none" onchange="$('#upload-file-info').html(this.files[0].name)">
+                                                <i class="fas fa-upload text-white"></i> Upload
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
-                            <div class="col-md-6 order-1 order-md-2">
+                            <hr />
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">SEO
+                                            Title</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">SEO
+                                            Detail</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Share
+                                            Title</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Share
+                                            Detail</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4 mb-4">
+                                <div class="col-md-4">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
+                                            Date</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
+                                            Time </label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
+                                            Year </label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                                <div style="overflow: hidden;">
-
-                                    <h6 class="subtitle float-left"> [xxxx-1234] </h6>
-                                    <span class="subtitle float-right">
-                                        Last Update : 2018-08-10 16:20:13
-                                    </span>
-
-                                    <div class="clearfix"></div>
-
-                                    <p class="float-right mt-3 mb-0">
-                                        Status
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h6>Published Details</h6>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Start</label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
+                                                <input type="text" class="form-control datetimepicker-input"
+                                                    data-target="#datetimepicker7" />
+                                                <div class="input-group-append" data-target="#datetimepicker7"
+                                                    data-toggle="datetimepicker">
+                                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Until</label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
+                                                <input type="text" class="form-control datetimepicker-input"
+                                                    data-target="#datetimepicker7" />
+                                                <div class="input-group-append" data-target="#datetimepicker7"
+                                                    data-toggle="datetimepicker">
+                                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <span>
+                                        Publishing
                                         <label class="switch">
                                             <input type="checkbox" checked>
                                             <span class="slider round"></span>
                                         </label>
-                                    </p>
+                                    </span>
                                 </div>
+                            </div>
+                        </section>
 
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-md-8">
-                                        <div class="img-responsive-16by9">
-                                            <img src="./img/program-thumbnail.jpg" style="max-width: 100%" />
+
+
+
+                        <!-- Bottom Secttion -->
+                        <section>
+                            <div class="row mt-4 mb-4">
+                                <div class="col-md-4 offset-md-8">
+                                    <select class="custom-select">
+                                        <option> ep1 : ศึก12 ราศี </option>
+                                        <option> ep2 : ศึก12 ราศี </option>
+                                        <option> ep3 : ศึก12 ราศี </option>
+                                        <option> ep4 : ศึก12 ราศี </option>
+                                        <option> ep5 : ศึก12 ราศี </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 order-2 order-md-1">
+                                    <div class="row mb-4">
+                                        <div class="col-md-8">
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Name</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control form-control-sm">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group row">
+                                                <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">EP</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control form-control-sm">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <img src="./img/program-thumbnail.jpg" style="max-width: 100%; " />
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col-3">
-                                        IMG 16:9
-                                    </div>
-                                    <div class="col">
-                                        <span class='label label-info' id="upload-file-info"></span>
-                                        <label class="btn btn-primary " for="my-file-selector">
-                                            <input id="my-file-selector" type="file" style="display:none" onchange="$('#upload-file-info').html(this.files[0].name)">
-                                            <i class="fas fa-upload text-white"></i> Upload
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        IMG 1:1
-                                    </div>
-                                    <div class="col">
-                                        <span class='label label-info' id="upload-file-info"></span>
-                                        <label class="btn btn-primary " for="my-file-selector">
-                                            <input id="my-file-selector" type="file" style="display:none" onchange="$('#upload-file-info').html(this.files[0].name)">
-                                            <i class="fas fa-upload text-white"></i> Upload
-                                        </label>
-                                    </div>
-                                </div>
 
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row mt-4">
-                            <div class="col-md-6">
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">SEO
-                                        Title</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control form-control-sm">
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-3 col-form-label col-form-label-sm">Description</label>
+                                        <div class="col-sm-9">
+                                            <textarea type="text" class="form-control form-control-sm"></textarea>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">SEO
-                                        Detail</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control form-control-sm">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Share
-                                        Title</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control form-control-sm">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Share
-                                        Detail</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control form-control-sm">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Tag</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Keyword</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Artist</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
 
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Onair
-                                        Date</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control form-control-sm">
-                                    </div>
                                 </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Onair
-                                        Time </label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control form-control-sm">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Onair
-                                        Year </label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control form-control-sm">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                <div class="col-md-6 order-1 order-md-2">
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h6>Published Details</h6>
+                                    <div style="overflow: hidden;">
+
+                                        <h6 class="subtitle float-left"> [xxxx-1234] </h6>
+                                        <span class="subtitle float-right">
+                                            Last Update : 2018-08-10 16:20:13
+                                        </span>
+
+                                        <div class="clearfix"></div>
+
+                                        <p class="float-right mt-3 mb-0">
+                                            Status
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </p>
+                                    </div>
+
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-md-8">
+                                            <div class="img-responsive-16by9">
+                                                <img src="./img/program-thumbnail.jpg" style="max-width: 100%" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="./img/program-thumbnail.jpg" style="max-width: 100%; " />
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-3">
+                                            IMG 16:9
+                                        </div>
+                                        <div class="col">
+                                            <span class='label label-info' id="upload-file-info"></span>
+                                            <label class="btn btn-primary " for="my-file-selector">
+                                                <input id="my-file-selector" type="file" style="display:none" onchange="$('#upload-file-info').html(this.files[0].name)">
+                                                <i class="fas fa-upload text-white"></i> Upload
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            IMG 1:1
+                                        </div>
+                                        <div class="col">
+                                            <span class='label label-info' id="upload-file-info"></span>
+                                            <label class="btn btn-primary " for="my-file-selector">
+                                                <input id="my-file-selector" type="file" style="display:none" onchange="$('#upload-file-info').html(this.files[0].name)">
+                                                <i class="fas fa-upload text-white"></i> Upload
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-5">
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Start</label>
-                                    <div class="col-sm-10">
-                                        <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker7" />
-                                            <div class="input-group-append" data-target="#datetimepicker7" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">SEO
+                                            Title</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">SEO
+                                            Detail</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Share
+                                            Title</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Share
+                                            Detail</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-4 mt-4">
+                                <div class="col-md-12">
+                                    <h6>Published Details</h6>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Start</label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
+                                                <input type="text" class="form-control datetimepicker-input"
+                                                    data-target="#datetimepicker2" />
+                                                <div class="input-group-append" data-target="#datetimepicker2"
+                                                    data-toggle="datetimepicker">
+                                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="form-group row">
-                                    <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Until</label>
-                                    <div class="col-sm-10">
-                                        <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker7" />
-                                            <div class="input-group-append" data-target="#datetimepicker7" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                <div class="col-md-5">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Until</label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                                                <input type="text" class="form-control datetimepicker-input"
+                                                    data-target="#datetimepicker1" />
+                                                <div class="input-group-append" data-target="#datetimepicker1"
+                                                    data-toggle="datetimepicker">
+                                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-md-2">
+                                    <span>
+                                        Publishing
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </span>
+                                </div>
                             </div>
-                            <div class="col-md-2">
-                                <span>
-                                    Publishing
-                                    <label class="switch">
-                                        <input type="checkbox" checked>
-                                        <span class="slider round"></span>
-                                    </label>
-                                </span>
+
+
+                            <!-- Table  -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h6>VDO Lists</h6>
+                                    <div class="table-responsive border " style="height: 300px;">
+                                        <table id="vdoListTable" class="table w-100 table-custom" style="width: 100%;">
+                                            <thead>
+                                                <tr>
+                                                    <th>VDO Name</th>
+                                                    <th>VDO URL</th>
+                                                    <th>Status</th>
+                                                    <th>Last Updated</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Part1</td>
+                                                    <td>google.com</td>
+                                                    <td>
+                                                        <input class="form-check-input" type="checkbox" value="" />
+                                                    </td>
+                                                    <td>2018-08-10 16:20:13</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Part2</td>
+                                                    <td>google.com</td>
+                                                    <td>
+                                                        <input class="form-check-input" type="checkbox" value="" />
+                                                    </td>
+                                                    <td>2018-08-10 16:20:13</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
                             </div>
-                        </div>
+                        </section>
                     </form>
                 </div>
             </div>
@@ -392,6 +643,7 @@
 <script src="./js/vendor/bootstrap.js"></script>
 <script src="./js/vendor/moment.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
 
 <script>
@@ -405,6 +657,36 @@
         });
         $("#datetimepicker8").on("change.datetimepicker", function (e) {
             $('#datetimepicker7').datetimepicker('maxDate', e.date);
+        });
+    });
+
+    $(function () {
+        $('#datetimepicker1').datetimepicker();
+        $('#datetimepicker2').datetimepicker({
+            useCurrent: false
+        });
+        $("#datetimepicker1").on("change.datetimepicker", function (e) {
+            $('#datetimepicker2').datetimepicker('minDate', e.date);
+        });
+        $("#datetimepicker2").on("change.datetimepicker", function (e) {
+            $('#datetimepicker1').datetimepicker('maxDate', e.date);
+        });
+    });
+
+    $(document).ready(function () {
+        $('#vdoListTable').DataTable({
+            "dom": '',
+            "pagingType": "full_numbers",
+            "columns": [
+                null,
+                null,
+                {
+                    "width": "10%"
+                },
+                {
+                    "width": "20%"
+                }
+            ]
         });
     });
 </script>
