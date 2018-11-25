@@ -374,6 +374,21 @@ body {
     }
 
 }
+// Table in Updatelist Component
+.table-updatelist {
+    border: none;
+    td {
+        border-top: none;
+        border-left: none;
+        &:last-child {
+            border-right: none;
+        
+        }
+    }
+    tr:last-child td {
+        border-bottom: none;
+    }
+}
 
 .dataTables_wrapper {
     .dataTables_paginate {
