@@ -1,5 +1,5 @@
 body {
-  font-family: "Prompt", sans-serif;
+  font-family: "Muli", sans-serif;
   background: #f3f4f8;
 }
 
@@ -233,6 +233,10 @@ body {
 .table-custom.dataTable.no-footer {
   border-bottom: 1px solid #cdd4db;
 }
+.table-custom.dataTable.dataTable thead th, .table-custom table.dataTable thead td {
+  border-bottom: 1px solid #cdd4db;
+}
+
 .dataTables_wrapper .dataTables_paginate .paginate_button {
   background: transparent !important;
   border: transparent !important;
