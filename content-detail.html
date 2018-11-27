@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/program.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/content.css" />
 
 
 
@@ -278,6 +278,18 @@
                                         <textarea id="mytextarea">Hello, World!</textarea>
                                     </form>
                                 </div>
+                                <div class="col-md-12 mb-5">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupFileAddon01">Video</span>
+                                        </div>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                                aria-describedby="inputGroupFileAddon01">
+                                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="col-md-6">
                                     <div class="form-group row">
                                         <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">SEO
@@ -395,45 +407,23 @@
 
 
 
-
                         <!-- Bottom Secttion -->
                         <section>
-                            <div class="row mt-4 mb-4">
-                                <div class="col-md-4 offset-md-8">
-                                    <select class="custom-select">
-                                        <option> ep1 : ศึก12 ราศี </option>
-                                        <option> ep2 : ศึก12 ราศี </option>
-                                        <option> ep3 : ศึก12 ราศี </option>
-                                        <option> ep4 : ศึก12 ราศี </option>
-                                        <option> ep5 : ศึก12 ราศี </option>
-                                    </select>
-                                </div>
-                            </div>
+                            <hr class="mb-5" />
+                            <h3>Albumn</h3>
                             <div class="row">
                                 <div class="col-md-6 order-2 order-md-1">
-                                    <div class="row mb-4">
-                                        <div class="col-md-8">
-                                            <div class="form-group row">
-                                                <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Name</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" class="form-control form-control-sm">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group row">
-                                                <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">EP</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" class="form-control form-control-sm">
-                                                </div>
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <label for="inputPassword" class="col-sm-3 col-form-label col-form-label-sm">Description</label>
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Category</label>
                                         <div class="col-sm-9">
-                                            <textarea type="text" class="form-control form-control-sm"></textarea>
+                                            <input type="text" class="form-control form-control-sm">
                                         </div>
                                     </div>
 
@@ -443,23 +433,11 @@
                                             <input type="text" class="form-control form-control-sm">
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Keyword</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Artist</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
 
                                 </div>
                                 <div class="col-md-6 order-1 order-md-2">
 
-                                    <div style="overflow: hidden;">
+                                    <div class=" o-hidden mb-3">
 
                                         <h6 class="subtitle float-left"> [xxxx-1234] </h6>
                                         <span class="subtitle float-right">
@@ -477,38 +455,10 @@
                                         </p>
                                     </div>
 
-                                    <div class="row d-flex align-items-center">
-                                        <div class="col-md-8">
-                                            <div class="img-responsive-16by9">
-                                                <img src="./img/program-thumbnail.jpg" style="max-width: 100%" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <img src="./img/program-thumbnail.jpg" style="max-width: 100%; " />
-                                        </div>
-                                    </div>
-                                    <div class="row mt-2">
-                                        <div class="col-3">
-                                            IMG 16:9
-                                        </div>
-                                        <div class="col">
-                                            <span class='label label-info' id="upload-file-info"></span>
-                                            <label class="btn btn-primary " for="my-file-selector">
-                                                <input id="my-file-selector" type="file" style="display:none" onchange="$('#upload-file-info').html(this.files[0].name)">
-                                                <i class="fas fa-upload text-white"></i> Upload
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            IMG 1:1
-                                        </div>
-                                        <div class="col">
-                                            <span class='label label-info' id="upload-file-info"></span>
-                                            <label class="btn btn-primary " for="my-file-selector">
-                                                <input id="my-file-selector" type="file" style="display:none" onchange="$('#upload-file-info').html(this.files[0].name)">
-                                                <i class="fas fa-upload text-white"></i> Upload
-                                            </label>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Keyword</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control form-control-sm">
                                         </div>
                                     </div>
                                 </div>
@@ -553,6 +503,37 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="row mt-4 mb-4">
+                                <div class="col-md-4">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
+                                            Date</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
+                                            Time </label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
+                                            Year </label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="row mb-4 mt-4">
                                 <div class="col-md-12">
                                     <h6>Published Details</h6>
@@ -599,41 +580,152 @@
                             </div>
 
 
-                            <!-- Table  -->
+                            <!-- Image List  -->
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h6>VDO Lists</h6>
-                                    <div class="table-responsive border " style="height: 300px;">
-                                        <table id="vdoListTable" class="table w-100 table-custom" style="width: 100%;">
-                                            <thead>
+                                    <h6 class="float-left">Image Lists</h6>
+                                    <span class="float-right">1 record(s)</span>
+                                    <div class="table-responsive border cimg" style="height: 300px;">
+                                        <table id="imgListTable" class="table w-100 table-custom content">
+                                            <thead style="display: none !important;">
                                                 <tr>
-                                                    <th>VDO Name</th>
-                                                    <th>VDO URL</th>
-                                                    <th>Status</th>
-                                                    <th>Last Updated</th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>Part1</td>
-                                                    <td>google.com</td>
-                                                    <td>
-                                                        <input class="form-check-input" type="checkbox" value="" />
+                                                    <td style="width: 20px;"></td>
+                                                    <td class="cimg__thumbnail">
+                                                        <div class="img-responsive-1by1">
+                                                            <img src="./img/content-demo.jpg" style="max-width: 100%; " />
+                                                        </div>
                                                     </td>
-                                                    <td>2018-08-10 16:20:13</td>
+
+                                                    <td class="cimg__title">
+                                                        <h6>ยี่ฮัว</h6>
+                                                        <span> v1.jpg | image/jpg | 100.56 KB </span>
+                                                    </td>
+
+                                                    <td class="content__badge cimg__badge">
+                                                        <ol class="content__tag">
+                                                            <i class="fas fa-tags"></i>
+                                                            <li class="content__tag-item"><a href="">ตีท้ายครัว</a></li>
+                                                            <li class="content__tag-item"><a href="">กรรชัย</a></li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="cimg__detail">
+                                                        <span>Last Update : August 18,2018</span>
+                                                        <a href="#" class="content__badge-item badge badge-success">Active</a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td style="width: 20px;"></td>
+                                                    <td class="cimg__thumbnail">
+                                                        <div class="img-responsive-1by1">
+                                                            <img src="./img/content-demo.jpg" style="max-width: 100%; " />
+                                                        </div>
+                                                    </td>
+
+                                                    <td class="cimg__title">
+                                                        <h6>ยี่ฮัว</h6>
+                                                        <span> v1.jpg | image/jpg | 100.56 KB </span>
+                                                    </td>
+
+                                                    <td class="content__badge cimg__badge">
+                                                        <ol class="content__tag">
+                                                            <i class="fas fa-tags"></i>
+                                                            <li class="content__tag-item"><a href="">ตีท้ายครัว</a></li>
+                                                            <li class="content__tag-item"><a href="">กรรชัย</a></li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="cimg__detail">
+                                                        <span>Last Update : August 18,2018</span>
+                                                        <a href="#" class="content__badge-item badge badge-success">Active</a>
+                                                    </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Part2</td>
-                                                    <td>google.com</td>
-                                                    <td>
-                                                        <input class="form-check-input" type="checkbox" value="" />
+                                                    <td style="width: 20px;"></td>
+                                                    <td class="cimg__thumbnail">
+                                                        <div class="img-responsive-1by1">
+                                                            <img src="./img/content-demo.jpg" style="max-width: 100%; " />
+                                                        </div>
                                                     </td>
-                                                    <td>2018-08-10 16:20:13</td>
+
+                                                    <td class="cimg__title">
+                                                        <h6>ยี่ฮัว</h6>
+                                                        <span> v1.jpg | image/jpg | 100.56 KB </span>
+                                                    </td>
+
+                                                    <td class="content__badge cimg__badge">
+                                                        <ol class="content__tag">
+                                                            <i class="fas fa-tags"></i>
+                                                            <li class="content__tag-item"><a href="">ตีท้ายครัว</a></li>
+                                                            <li class="content__tag-item"><a href="">กรรชัย</a></li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="cimg__detail">
+                                                        <span>Last Update : August 18,2018</span>
+                                                        <a href="#" class="content__badge-item badge badge-success">Active</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 20px;"></td>
+                                                    <td class="cimg__thumbnail">
+                                                        <div class="img-responsive-1by1">
+                                                            <img src="./img/content-demo.jpg" style="max-width: 100%; " />
+                                                        </div>
+                                                    </td>
+
+                                                    <td class="cimg__title">
+                                                        <h6>ยี่ฮัว</h6>
+                                                        <span> v1.jpg | image/jpg | 100.56 KB </span>
+                                                    </td>
+
+                                                    <td class="content__badge cimg__badge">
+                                                        <ol class="content__tag">
+                                                            <i class="fas fa-tags"></i>
+                                                            <li class="content__tag-item"><a href="">ตีท้ายครัว</a></li>
+                                                            <li class="content__tag-item"><a href="">กรรชัย</a></li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="cimg__detail">
+                                                        <span>Last Update : August 18,2018</span>
+                                                        <a href="#" class="content__badge-item badge badge-success">Active</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 20px;"></td>
+                                                    <td class="cimg__thumbnail">
+                                                        <div class="img-responsive-1by1">
+                                                            <img src="./img/content-demo.jpg" style="max-width: 100%; " />
+                                                        </div>
+                                                    </td>
+
+                                                    <td class="cimg__title">
+                                                        <h6>ยี่ฮัว</h6>
+                                                        <span> v1.jpg | image/jpg | 100.56 KB </span>
+                                                    </td>
+
+                                                    <td class="content__badge cimg__badge">
+                                                        <ol class="content__tag">
+                                                            <i class="fas fa-tags"></i>
+                                                            <li class="content__tag-item"><a href="">ตีท้ายครัว</a></li>
+                                                            <li class="content__tag-item"><a href="">กรรชัย</a></li>
+                                                        </ol>
+                                                    </td>
+                                                    <td class="cimg__detail">
+                                                        <span>Last Update : August 18,2018</span>
+                                                        <a href="#" class="content__badge-item badge badge-success">Active</a>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-
                                 </div>
                             </div>
                         </section>
@@ -706,20 +798,23 @@
     });
 
     $(document).ready(function () {
-        $('#vdoListTable').DataTable({
+
+        var t = $('#imgListTable').DataTable({
             "dom": '',
-            "pagingType": "full_numbers",
-            "columns": [
-                null,
-                null,
-                {
-                    "width": "10%"
-                },
-                {
-                    "width": "20%"
-                }
-            ]
+            "ordering": false,
+
+
         });
+
+        t.on('order.dt search.dt', function () {
+            t.column(0, {
+                search: 'applied',
+                order: 'applied'
+            }).nodes().each(function (cell, i) {
+                cell.innerHTML = i + 1 + '.';
+            });
+        }).draw();
+
     });
 </script>
 

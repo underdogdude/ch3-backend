@@ -19,6 +19,10 @@ body {
   background: #080a33;
 }
 
+.o-hidden {
+  overflow: hidden;
+}
+
 .btn-round {
   width: 30px;
   height: 30px;
@@ -417,6 +421,34 @@ input:checked + .slider:before {
   margin-bottom: 2px;
   height: 22px;
   padding-top: 5px;
+}
+
+.cimg {
+  background: #f3f4f8;
+}
+.cimg .cimg__thumbnail {
+  width: 80px;
+  padding: 5px 2px;
+}
+.cimg .cimg__title h6 {
+  font-weight: bold;
+  padding-top: 16px;
+  margin-bottom: 0;
+}
+.cimg .cimg__title span {
+  color: #6c757d;
+}
+.cimg .cimg__badge {
+  padding-top: 30px;
+  width: 20%;
+}
+.cimg .cimg__detail {
+  text-align: right;
+  padding-top: 16px;
+  width: 20%;
+}
+.cimg .cimg__detail .badge {
+  width: 80%;
 }
 
 /*# sourceMappingURL=content.css.map */

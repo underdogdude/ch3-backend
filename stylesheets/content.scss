@@ -52,3 +52,39 @@
         padding-top: 5px;
     }
 }
+
+.cimg {
+ 
+    background: #f3f4f8;
+    .cimg__thumbnail {
+        width: 80px;
+        padding: 5px 2px;
+    }
+    
+    .cimg__title {
+        
+        h6 {
+            font-weight: bold;
+            padding-top: 16px;
+            margin-bottom: 0;
+        }
+        span {
+            color: #6c757d;
+        }
+    }
+    .cimg__badge {
+        padding-top: 30px;
+        width: 20%;
+
+    }
+    .cimg__detail {
+        text-align: right;
+        padding-top: 16px;
+        width: 20%;
+        .badge {
+            width: 80%;
+        }
+    }
+}
+
+
