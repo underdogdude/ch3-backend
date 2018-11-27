@@ -450,5 +450,13 @@ input:checked + .slider:before {
 .cimg .cimg__detail .badge {
   width: 80%;
 }
+.cimg .cimg__detail-2 {
+  text-align: right;
+  padding-top: 16px;
+  width: 30%;
+}
+.cimg .cimg__detail-2 .badge {
+  width: 70%;
+}
 
 /*# sourceMappingURL=content.css.map */
