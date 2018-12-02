@@ -1,0 +1,40 @@
+@import 'main';
+
+.person {
+    .person__thumb {
+        width: 15%;
+        min-width: 100px;
+        img {
+            max-width: 100%;
+
+        }
+    }
+    .person__detail {
+        
+        .person__detail-title {
+            font-size: 20px;
+            color: $primary-color;
+            margin-bottom: 0 ;
+        }
+    }
+      
+    .person__badge,
+    .person__badge-item {
+        min-width: 80px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        height: 22px;
+        padding-top: 5px;
+    }   
+
+    .person__badge-artist {
+        background: $primary-color;
+    }
+    .person__badge-director {
+        background: $ch28-color;
+    }
+    .person__badge-blogger {
+        background: $ch13-color;
+    }
+  
+}
