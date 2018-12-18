@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/vendor/bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/person.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/gallery.css" />
 
 
 </head>
@@ -68,7 +68,7 @@
     <section class="bread-box" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="./updatelist.html">CMS -> CH3</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Person</li>
+            <li class="breadcrumb-item active" aria-current="page">Gallery</li>
         </ol>
     </section>
 
@@ -158,7 +158,7 @@
                     <div class="col-md-8 p-0">
                         <div class="row">
                             <div class="col-md-5 d-flex align-items-center">
-                                <h1 class="title">Person</h1>
+                                <h1 class="title">Gallery</h1>
                             </div>
                             <div class="col-md-7 d-flex align-items-center form-group">
                                 <span class="w-100 text-right pr-1">Filter : </span>
@@ -177,7 +177,7 @@
                         <!-- 84px is number of "Header (Not  header navbar)" -->
                         <div class="card card-body p-0" style="overflow: auto; height: calc(100vh - 96px);">
 
-                            <table id="starTable" class="table table-responsive w-100 table-custom person">
+                            <table id="galleryTable" class="table table-responsive w-100 table-custom gallery">
                                 <thead style="display: none !important;">
                                     <tr>
                                         <th></th>
@@ -187,92 +187,68 @@
                                     </tr>
                                 </thead>
                                 <tbody class="d-table w-100">
-                                    <tr class="tr-link"  data-url="./person-detail.html">
+                                    <tr class="tr-link" data-url="./gallery-detail.html">
                                         <td></td>
-                                        <td class="person__thumb" >
-                                            <img src="img/star1.jpg" />
-                                        </td>
-                                        <td class="person__detail">
-                                            <p class="person__detail-title">
-                                                มิว นิษฐา จิรยั่งยืน
+                                        <td class="gallery__detail">
+                                            <p class="gallery__detail-title">
+                                                แข่งร้องเพลงชิงแชมป์โลก
                                             </p>
-                                            <a href="#" class="person__badge person__badge-artist  badge badge-primary">Artist</a>
-                                            <span class="prog__detail-subtitle">1,234 views| Last Update : August 12, 2018</span>
+                                            <span class="gallery__detail-subtitle">1,234 views | Last Update : August
+                                                12, 2018</span>
 
                                         </td>
-                                      
+                                        <td class="text-right">
+                                            <h6>
+                                                <strong>
+                                                    <i class="far fa-images"></i>
+                                                    20pics
+                                                </strong>
+                                            </h6>
+                                            <ol class="gallery__tag">
+                                                <i class="fas fa-tags"></i>
+                                                <li class="gallery__tag-item"><a href="">ตีท้ายครัว</a></li>
+                                                <li class="gallery__tag-item"><a href="">กรรชัย</a></li>
+                                            </ol>
+                                        </td>
+
                                         <td class=" d-flex flex-column">
-                                            
-                                            <a href="#" class="person__badge-item badge badge-success">Publishing</a>
-                                            <a href="#" class="person__badge-item badge badge-success">Active</a>
+                                            <a href="#" class="gallery__badge-item badge badge-success">Publishing</a>
+                                            <a href="#" class="gallery__badge-item badge badge-success">Active</a>
                                         </td>
                                     </tr>
-                                    <tr class="tr-link"  data-url="./person-detail.html">
+                                    <tr class="tr-link" data-url="./gallery-detail.html">
                                         <td></td>
-                                        <td class="person__thumb" >
-                                            <img src="img/star2.jpg" />
-                                        </td>
-                                        <td class="person__detail">
-                                            <p class="person__detail-title">
-                                                โป๊ป ธนวรรธน์ วรรธนะภูติ
+                                        <td class="gallery__detail">
+                                            <p class="gallery__detail-title">
+                                                แข่งร้องเพลงชิงแชมป์โลก
                                             </p>
-                                            <a href="#" class="person__badge person__badge-artist  badge badge-primary">Artist</a>
-                                            <span class="prog__detail-subtitle">1,234 views| Last Update : August 12, 2018</span>
+                                            <span class="gallery__detail-subtitle">1,234 views | Last Update : August
+                                                12, 2018</span>
 
                                         </td>
-                                      
-                                        <td class=" d-flex flex-column">
-                                            
-                                            <a href="#" class="person__badge-item badge badge-success">Publishing</a>
-                                            <a href="#" class="person__badge-item badge badge-success">Active</a>
+                                        <td class="text-right">
+                                            <h6>
+                                                <strong>
+                                                    <i class="far fa-images"></i>
+                                                    20pics
+                                                </strong>
+                                            </h6>
+                                            <ol class="gallery__tag">
+                                                <i class="fas fa-tags"></i>
+                                                <li class="gallery__tag-item"><a href="">ตีท้ายครัว</a></li>
+                                                <li class="gallery__tag-item"><a href="">กรรชัย</a></li>
+                                            </ol>
                                         </td>
-                                    </tr>
-                                    <tr class="tr-link"  data-url="./person-detail.html">
-                                        <td></td>
-                                        <td class="person__thumb" >
-                                            <img src="img/blogger1.jpg" />
-                                        </td>
-                                        <td class="person__detail">
-                                            <p class="person__detail-title">
-                                                ซี ฉัตรปวีณ์ ตรีชัชวาล
-                                            </p>
-                                            <a href="#" class="person__badge person__badge-blogger  badge badge-primary">Blogger</a>
-                                            <span class="prog__detail-subtitle">1,234 views| Last Update : August 12, 2018</span>
 
-                                        </td>
-                                      
                                         <td class=" d-flex flex-column">
-                                            
-                                            <a href="#" class="person__badge-item badge badge-success">Publishing</a>
-                                            <a href="#" class="person__badge-item badge badge-success">Active</a>
-                                        </td>
-                                    </tr>
-                                    <tr class="tr-link"  data-url="./person-detail.html">
-                                        <td></td>
-                                        <td class="person__thumb" >
-                                            <img src="img/director1.jpg" />
-                                        </td>
-                                        <td class="person__detail">
-                                            <p class="person__detail-title">
-                                                อ๊อฟ พงษ์พัฒน์
-                                            </p>
-                                            <a href="#" class="person__badge person__badge-director  badge badge-primary">Director</a>
-                                            <span class="prog__detail-subtitle">1,234 views| Last Update : August 12, 2018</span>
-
-                                        </td>
-                                      
-                                        <td class=" d-flex flex-column">
-                                            
-                                            <a href="#" class="person__badge-item badge badge-success">Publishing</a>
-                                            <a href="#" class="person__badge-item badge badge-success">Active</a>
+                                            <a href="#" class="gallery__badge-item badge badge-success">Publishing</a>
+                                            <a href="#" class="gallery__badge-item badge badge-success">Active</a>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
 
                         </div>
-
-
 
                         <div class="row">
                             <div class="col-md-4 d-flex align-items-center">
@@ -360,10 +336,9 @@
 <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
 <script>
-  
     $(document).ready(function () {
 
-         var t = $('#starTable').DataTable({
+        var t = $('#galleryTable').DataTable({
             "dom": '',
         });
 
@@ -390,7 +365,7 @@
 
         row +=
             `
-            <tr class="tr-link" data-url="./person-updatelist.html">
+            <tr class="tr-link" data-url="./gallery-updatelist.html">
                 <td> ${ i } </td>
                 <td> 8/10/2018 16:${ i } </td>
                 <td>ช่อง13 (2)</td>
@@ -406,12 +381,11 @@
 
 
     // Clickable Row in TVG Table
-    $(document).ready(function($) {
-        $(".tr-link").click(function() {
+    $(document).ready(function ($) {
+        $(".tr-link").click(function () {
             window.document.location = $(this).data("url");
         });
     });
-
 </script>
 
 </html>
