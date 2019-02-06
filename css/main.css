@@ -57,6 +57,9 @@ body {
   margin-left: 10px;
   margin-right: 10px;
 }
+.navbar .navbar-collapse {
+  background: #080a33;
+}
 
 .bread-box .breadcrumb {
   height: 40px;
