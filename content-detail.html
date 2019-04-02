@@ -82,670 +82,601 @@
         </ol>
     </section>
 
+
     <div class="container-fluid">
-        <div class="row row-stretch">
-            <!-- Side Nav -->
-            <div class="col-md-2">
-
-                <div id="accordion" class="sidenav pt-4 pl-2">
-                    <div class="sidenav-title">
-                        <a href="./updatelist.html">Update List</a>
-                    </div>
-
-                    <div class="sidenav-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                            Channel Master
-                        </a>
-                    </div>
-                    <div id="collapse1" class="panel-collapse collapse in sidenav-collapse">
-                        <a href="./tvguides.html">
-                            Channel & TV Guides
-                        </a>
-                    </div>
-
-                    <div class="sidenav-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                            ProgramTV Master
-                        </a>
-                    </div>
-                    <div id="collapse2" class="panel-collapse collapse sidenav-collapse">
-                        <a href="./programtv-category.html">
-                            Program Category
-                        </a>
-                        <a href="./programtv.html">
-                            Program TV
-                        </a>
-                    </div>
-
-                    <div class="sidenav-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                            Contents Master
-                        </a>
-                    </div>
-                    <div id="collapse3" class="panel-collapse collapse sidenav-collapse">
-                        <a href="./content-category.html">
-                            Contents Category
-                        </a>
-                        <a href="./content.html">
-                            Contents
-                        </a>
-                    </div>
-
-                    <div class="sidenav-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                            Person Master
-                        </a>
-                    </div>
-                    <div id="collapse4" class="panel-collapse collapse sidenav-collapse">
-                        <a href="./person-category.html">
-                            Person Category
-                        </a>
-                        <a href="./person.html">
-                            Person
-                        </a>
-                    </div>
-
-                    <div class="sidenav-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                            Gallery Master
-                        </a>
-                    </div>
-                    <div id="collapse5" class="panel-collapse collapse sidenav-collapse">
-                        <a href="./gallery-category.html">
-                            Gallery Category
-                        </a>
-                    </div>
-                    <div id="collapse5" class="panel-collapse collapse sidenav-collapse">
-                        <a href="./gallery.html">
-                            Gallery
-                        </a>
-                    </div>
-                </div>
+        <div class="row d-flex flex-nowrap wrapper">
+            <div class="col-md-2 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
             </div>
-            <!-- Center -->
-            <div class="col-md-10 pt-3 scrollable">
-                <div class="card p-3 mb-5 mt-3">
-                    <form action="">
-                        <section>
-                            <div class="row ">
+            <main class="col-md-10 float-left col px-5 pl-md-2 pt-2 main">
+                <!-- Center -->
+                    <div class="card p-3 mb-5 mt-3">
+                        <form action="">
+                            <section>
+                                <div class="row ">
 
-                                <div class="col-md-6 order-2 order-md-1">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Name</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
+                                    <div class="col-md-6 order-2 order-md-1">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Name</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="inputPassword" class="col-sm-3 col-form-label col-form-label-sm">Summary</label>
-                                        <div class="col-sm-9">
-                                            <textarea type="text" class="form-control form-control-sm"></textarea>
+                                        <div class="form-group row">
+                                            <label for="inputPassword" class="col-sm-3 col-form-label col-form-label-sm">Summary</label>
+                                            <div class="col-sm-9">
+                                                <textarea type="text" class="form-control form-control-sm"></textarea>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="form-group row">
-                                        <label for="inputPassword" class="col-sm-3 col-form-label col-form-label-sm">Description</label>
-                                        <div class="col-sm-9">
+                                        <div class="form-group row">
+                                            <label for="inputPassword" class="col-sm-3 col-form-label col-form-label-sm">Description</label>
+                                            <div class="col-sm-9">
 
-                                            <textarea type="text" class="form-control form-control-sm"></textarea>
+                                                <textarea type="text" class="form-control form-control-sm"></textarea>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Category</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Category</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Tag</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Tag</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Keyword</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Keyword</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Artist</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Artist</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
                                         </div>
-                                    </div>
 
+                                    </div>
+                                    <div class="col-md-6 order-1 order-md-2">
+
+                                        <div style="overflow: hidden;">
+
+                                            <h6 class="subtitle float-left"> [xxxx-1234] </h6>
+                                            <span class="subtitle float-right">
+                                                Last Update : 2018-08-10 16:20:13
+                                            </span>
+
+                                            <div class="clearfix"></div>
+
+                                            <p class="float-right mt-3 mb-0">
+                                                Status
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </p>
+                                        </div>
+
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-md-8">
+                                                <div class="img-responsive-16by9">
+                                                    <img src="./img/content-demo.jpg" style="max-width: 100%" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="img-responsive-1by1">
+                                                    <img src="./img/content-demo.jpg" style="max-width: 100%; " />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-3">
+                                                IMG 16:9
+                                            </div>
+                                            <div class="col">
+                                                <span class='label label-info' id="upload-file-info"></span>
+                                                <label class="btn btn-primary " for="my-file-selector">
+                                                    <input id="my-file-selector" type="file" style="display:none"
+                                                        onchange="$('#upload-file-info').html(this.files[0].name)">
+                                                    <i class="fas fa-upload text-white"></i> Upload
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                IMG 1:1
+                                            </div>
+                                            <div class="col">
+                                                <span class='label label-info' id="upload-file-info"></span>
+                                                <label class="btn btn-primary " for="my-file-selector">
+                                                    <input id="my-file-selector" type="file" style="display:none"
+                                                        onchange="$('#upload-file-info').html(this.files[0].name)">
+                                                    <i class="fas fa-upload text-white"></i> Upload
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <div class="col-md-6 order-1 order-md-2">
+                                <hr />
+                                <div class="row mt-4">
+                                    <div class="col-md-12 mb-4">
+                                        <!-- TINY EMC -->
+                                        <form method="post">
+                                            <textarea id="mytextarea">Hello, World!</textarea>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-12 mb-5">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="inputGroupFileAddon01">Video</span>
+                                            </div>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                                    aria-describedby="inputGroupFileAddon01">
+                                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                            </div>
+                                            <a href="#" class="pt-1 pl-3">
+                                                preview
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">SEO
+                                                Title</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">SEO
+                                                Detail</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Share
+                                                Title</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Share
+                                                Detail</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-4 mb-4">
+                                    <div class="col-md-4">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
+                                                Date</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
+                                                Time </label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
+                                                Year </label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                    <div style="overflow: hidden;">
-
-                                        <h6 class="subtitle float-left"> [xxxx-1234] </h6>
-                                        <span class="subtitle float-right">
-                                            Last Update : 2018-08-10 16:20:13
-                                        </span>
-
-                                        <div class="clearfix"></div>
-
-                                        <p class="float-right mt-3 mb-0">
-                                            Status
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h6>Published Details</h6>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Start</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
+                                                    <input type="text" class="form-control datetimepicker-input"
+                                                        data-target="#datetimepicker7" />
+                                                    <div class="input-group-append" data-target="#datetimepicker7"
+                                                        data-toggle="datetimepicker">
+                                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Until</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
+                                                    <input type="text" class="form-control datetimepicker-input"
+                                                        data-target="#datetimepicker7" />
+                                                    <div class="input-group-append" data-target="#datetimepicker7"
+                                                        data-toggle="datetimepicker">
+                                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <span>
+                                            Publishing
                                             <label class="switch">
                                                 <input type="checkbox" checked>
                                                 <span class="slider round"></span>
                                             </label>
-                                        </p>
-                                    </div>
-
-                                    <div class="row d-flex align-items-center">
-                                        <div class="col-md-8">
-                                            <div class="img-responsive-16by9">
-                                                <img src="./img/content-demo.jpg" style="max-width: 100%" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="img-responsive-1by1">
-                                                <img src="./img/content-demo.jpg" style="max-width: 100%; " />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-2">
-                                        <div class="col-3">
-                                            IMG 16:9
-                                        </div>
-                                        <div class="col">
-                                            <span class='label label-info' id="upload-file-info"></span>
-                                            <label class="btn btn-primary " for="my-file-selector">
-                                                <input id="my-file-selector" type="file" style="display:none" onchange="$('#upload-file-info').html(this.files[0].name)">
-                                                <i class="fas fa-upload text-white"></i> Upload
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            IMG 1:1
-                                        </div>
-                                        <div class="col">
-                                            <span class='label label-info' id="upload-file-info"></span>
-                                            <label class="btn btn-primary " for="my-file-selector">
-                                                <input id="my-file-selector" type="file" style="display:none" onchange="$('#upload-file-info').html(this.files[0].name)">
-                                                <i class="fas fa-upload text-white"></i> Upload
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <hr />
-                            <div class="row mt-4">
-                                <div class="col-md-12 mb-4">
-                                    <!-- TINY EMC -->
-                                    <form method="post">
-                                        <textarea id="mytextarea">Hello, World!</textarea>
-                                    </form>
-                                </div>
-                                <div class="col-md-12 mb-5">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="inputGroupFileAddon01">Video</span>
-                                        </div>
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                                aria-describedby="inputGroupFileAddon01">
-                                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                                        </div>
-                                        <a href="#" class="pt-1 pl-3">
-                                            preview
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">SEO
-                                            Title</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">SEO
-                                            Detail</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Share
-                                            Title</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Share
-                                            Detail</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mt-4 mb-4">
-                                <div class="col-md-4">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
-                                            Date</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
-                                            Time </label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
-                                            Year </label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h6>Published Details</h6>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Start</label>
-                                        <div class="col-sm-10">
-                                            <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
-                                                <input type="text" class="form-control datetimepicker-input"
-                                                    data-target="#datetimepicker7" />
-                                                <div class="input-group-append" data-target="#datetimepicker7"
-                                                    data-toggle="datetimepicker">
-                                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Until</label>
-                                        <div class="col-sm-10">
-                                            <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
-                                                <input type="text" class="form-control datetimepicker-input"
-                                                    data-target="#datetimepicker7" />
-                                                <div class="input-group-append" data-target="#datetimepicker7"
-                                                    data-toggle="datetimepicker">
-                                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <span>
-                                        Publishing
-                                        <label class="switch">
-                                            <input type="checkbox" checked>
-                                            <span class="slider round"></span>
-                                        </label>
-                                    </span>
-                                </div>
-                            </div>
-                        </section>
-
-
-
-                        <!-- Bottom Secttion -->
-                        <section>
-                            <hr class="mb-5" />
-                            <h3>Albumn</h3>
-                            <div class="row">
-                                <div class="col-md-6 order-2 order-md-1">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Name</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Category</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Tag</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-md-6 order-1 order-md-2">
-
-                                    <div class=" o-hidden mb-3">
-
-                                        <h6 class="subtitle float-left"> [xxxx-1234] </h6>
-                                        <span class="subtitle float-right">
-                                            Last Update : 2018-08-10 16:20:13
                                         </span>
+                                    </div>
+                                </div>
+                            </section>
 
-                                        <div class="clearfix"></div>
 
-                                        <p class="float-right mt-3 mb-0">
-                                            Status
+
+                            <!-- Bottom Secttion -->
+                            <section>
+                                <hr class="mb-5" />
+                                <h3>Albumn</h3>
+                                <div class="row">
+                                    <div class="col-md-6 order-2 order-md-1">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Name</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Category</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Tag</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 order-1 order-md-2">
+
+                                        <div class=" o-hidden mb-3">
+
+                                            <h6 class="subtitle float-left"> [xxxx-1234] </h6>
+                                            <span class="subtitle float-right">
+                                                Last Update : 2018-08-10 16:20:13
+                                            </span>
+
+                                            <div class="clearfix"></div>
+
+                                            <p class="float-right mt-3 mb-0">
+                                                Status
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </p>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Keyword</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-md-6">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">SEO
+                                                Title</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">SEO
+                                                Detail</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Share
+                                                Title</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Share
+                                                Detail</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4 mb-4">
+                                    <div class="col-md-4">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
+                                                Date</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
+                                                Time </label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
+                                                Year </label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control form-control-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-4 mt-4">
+                                    <div class="col-md-12">
+                                        <h6>Published Details</h6>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Start</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
+                                                    <input type="text" class="form-control datetimepicker-input"
+                                                        data-target="#datetimepicker2" />
+                                                    <div class="input-group-append" data-target="#datetimepicker2"
+                                                        data-toggle="datetimepicker">
+                                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-group row">
+                                            <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Until</label>
+                                            <div class="col-sm-10">
+                                                <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                                                    <input type="text" class="form-control datetimepicker-input"
+                                                        data-target="#datetimepicker1" />
+                                                    <div class="input-group-append" data-target="#datetimepicker1"
+                                                        data-toggle="datetimepicker">
+                                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <span>
+                                            Publishing
                                             <label class="switch">
                                                 <input type="checkbox" checked>
                                                 <span class="slider round"></span>
                                             </label>
-                                        </p>
+                                        </span>
                                     </div>
+                                </div>
 
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Keyword</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
+
+                                <!-- Image List  -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h6 class="float-left">Image Lists</h6>
+                                        <span class="float-right">1 record(s)</span>
+                                        <div class="table-responsive border cimg" style="height: 300px;">
+                                            <table id="imgListTable" class="table w-100 table-custom content">
+                                                <thead style="display: none !important;">
+                                                    <tr>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="tr-link">
+                                                        <td style="width: 20px;"></td>
+                                                        <td class="cimg__thumbnail">
+                                                            <div class="img-responsive-1by1">
+                                                                <img src="./img/content-demo.jpg" style="max-width: 100%; " />
+                                                            </div>
+                                                        </td>
+
+                                                        <td class="cimg__title">
+                                                            <h6>ยี่ฮัว</h6>
+                                                            <span> v1.jpg | image/jpg | 100.56 KB </span>
+                                                        </td>
+
+                                                        <td class="content__badge cimg__badge">
+                                                            <ol class="content__tag">
+                                                                <i class="fas fa-tags"></i>
+                                                                <li class="content__tag-item"><a href="">ตีท้ายครัว</a></li>
+                                                                <li class="content__tag-item"><a href="">กรรชัย</a></li>
+                                                            </ol>
+                                                        </td>
+                                                        <td class="cimg__detail">
+                                                            <span>Last Update : August 18,2018</span>
+                                                            <a href="#" class="content__badge-item badge badge-success">Active</a>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="tr-link">
+                                                        <td style="width: 20px;"></td>
+                                                        <td class="cimg__thumbnail">
+                                                            <div class="img-responsive-1by1">
+                                                                <img src="./img/content-demo.jpg" style="max-width: 100%; " />
+                                                            </div>
+                                                        </td>
+
+                                                        <td class="cimg__title">
+                                                            <h6>ยี่ฮัว</h6>
+                                                            <span> v1.jpg | image/jpg | 100.56 KB </span>
+                                                        </td>
+
+                                                        <td class="content__badge cimg__badge">
+                                                            <ol class="content__tag">
+                                                                <i class="fas fa-tags"></i>
+                                                                <li class="content__tag-item"><a href="">ตีท้ายครัว</a></li>
+                                                                <li class="content__tag-item"><a href="">กรรชัย</a></li>
+                                                            </ol>
+                                                        </td>
+                                                        <td class="cimg__detail">
+                                                            <span>Last Update : August 18,2018</span>
+                                                            <a href="#" class="content__badge-item badge badge-success">Active</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tr-link">
+                                                        <td style="width: 20px;"></td>
+                                                        <td class="cimg__thumbnail">
+                                                            <div class="img-responsive-1by1">
+                                                                <img src="./img/content-demo.jpg" style="max-width: 100%; " />
+                                                            </div>
+                                                        </td>
+
+                                                        <td class="cimg__title">
+                                                            <h6>ยี่ฮัว</h6>
+                                                            <span> v1.jpg | image/jpg | 100.56 KB </span>
+                                                        </td>
+
+                                                        <td class="content__badge cimg__badge">
+                                                            <ol class="content__tag">
+                                                                <i class="fas fa-tags"></i>
+                                                                <li class="content__tag-item"><a href="">ตีท้ายครัว</a></li>
+                                                                <li class="content__tag-item"><a href="">กรรชัย</a></li>
+                                                            </ol>
+                                                        </td>
+                                                        <td class="cimg__detail">
+                                                            <span>Last Update : August 18,2018</span>
+                                                            <a href="#" class="content__badge-item badge badge-success">Active</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tr-link">
+                                                        <td style="width: 20px;"></td>
+                                                        <td class="cimg__thumbnail">
+                                                            <div class="img-responsive-1by1">
+                                                                <img src="./img/content-demo.jpg" style="max-width: 100%; " />
+                                                            </div>
+                                                        </td>
+
+                                                        <td class="cimg__title">
+                                                            <h6>ยี่ฮัว</h6>
+                                                            <span> v1.jpg | image/jpg | 100.56 KB </span>
+                                                        </td>
+
+                                                        <td class="content__badge cimg__badge">
+                                                            <ol class="content__tag">
+                                                                <i class="fas fa-tags"></i>
+                                                                <li class="content__tag-item"><a href="">ตีท้ายครัว</a></li>
+                                                                <li class="content__tag-item"><a href="">กรรชัย</a></li>
+                                                            </ol>
+                                                        </td>
+                                                        <td class="cimg__detail">
+                                                            <span>Last Update : August 18,2018</span>
+                                                            <a href="#" class="content__badge-item badge badge-success">Active</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="tr-link">
+                                                        <td style="width: 20px;"></td>
+                                                        <td class="cimg__thumbnail">
+                                                            <div class="img-responsive-1by1">
+                                                                <img src="./img/content-demo.jpg" style="max-width: 100%; " />
+                                                            </div>
+                                                        </td>
+
+                                                        <td class="cimg__title">
+                                                            <h6>ยี่ฮัว</h6>
+                                                            <span> v1.jpg | image/jpg | 100.56 KB </span>
+                                                        </td>
+
+                                                        <td class="content__badge cimg__badge">
+                                                            <ol class="content__tag">
+                                                                <i class="fas fa-tags"></i>
+                                                                <li class="content__tag-item"><a href="">ตีท้ายครัว</a></li>
+                                                                <li class="content__tag-item"><a href="">กรรชัย</a></li>
+                                                            </ol>
+                                                        </td>
+                                                        <td class="cimg__detail">
+                                                            <span>Last Update : August 18,2018</span>
+                                                            <a href="#" class="content__badge-item badge badge-success">Active</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row mt-4">
-                                <div class="col-md-6">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">SEO
-                                            Title</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">SEO
-                                            Detail</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Share
-                                            Title</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-3 col-form-label col-form-label-sm">Share
-                                            Detail</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row mt-4 mb-4">
-                                <div class="col-md-4">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
-                                            Date</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
-                                            Time </label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-4 col-form-label col-form-label-sm">Onair
-                                            Year </label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control form-control-sm">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row mb-4 mt-4">
-                                <div class="col-md-12">
-                                    <h6>Published Details</h6>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Start</label>
-                                        <div class="col-sm-10">
-                                            <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
-                                                <input type="text" class="form-control datetimepicker-input"
-                                                    data-target="#datetimepicker2" />
-                                                <div class="input-group-append" data-target="#datetimepicker2"
-                                                    data-toggle="datetimepicker">
-                                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="form-group row">
-                                        <label for="staticEmail" class="col-sm-2 col-form-label col-form-label-sm">Until</label>
-                                        <div class="col-sm-10">
-                                            <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                                                <input type="text" class="form-control datetimepicker-input"
-                                                    data-target="#datetimepicker1" />
-                                                <div class="input-group-append" data-target="#datetimepicker1"
-                                                    data-toggle="datetimepicker">
-                                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <span>
-                                        Publishing
-                                        <label class="switch">
-                                            <input type="checkbox" checked>
-                                            <span class="slider round"></span>
-                                        </label>
-                                    </span>
-                                </div>
-                            </div>
-
-
-                            <!-- Image List  -->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h6 class="float-left">Image Lists</h6>
-                                    <span class="float-right">1 record(s)</span>
-                                    <div class="table-responsive border cimg" style="height: 300px;">
-                                        <table id="imgListTable" class="table w-100 table-custom content">
-                                            <thead style="display: none !important;">
-                                                <tr>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="tr-link">
-                                                    <td style="width: 20px;"></td>
-                                                    <td class="cimg__thumbnail">
-                                                        <div class="img-responsive-1by1">
-                                                            <img src="./img/content-demo.jpg" style="max-width: 100%; " />
-                                                        </div>
-                                                    </td>
-
-                                                    <td class="cimg__title">
-                                                        <h6>ยี่ฮัว</h6>
-                                                        <span> v1.jpg | image/jpg | 100.56 KB </span>
-                                                    </td>
-
-                                                    <td class="content__badge cimg__badge">
-                                                        <ol class="content__tag">
-                                                            <i class="fas fa-tags"></i>
-                                                            <li class="content__tag-item"><a href="">ตีท้ายครัว</a></li>
-                                                            <li class="content__tag-item"><a href="">กรรชัย</a></li>
-                                                        </ol>
-                                                    </td>
-                                                    <td class="cimg__detail">
-                                                        <span>Last Update : August 18,2018</span>
-                                                        <a href="#" class="content__badge-item badge badge-success">Active</a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr class="tr-link">
-                                                    <td style="width: 20px;"></td>
-                                                    <td class="cimg__thumbnail">
-                                                        <div class="img-responsive-1by1">
-                                                            <img src="./img/content-demo.jpg" style="max-width: 100%; " />
-                                                        </div>
-                                                    </td>
-
-                                                    <td class="cimg__title">
-                                                        <h6>ยี่ฮัว</h6>
-                                                        <span> v1.jpg | image/jpg | 100.56 KB </span>
-                                                    </td>
-
-                                                    <td class="content__badge cimg__badge">
-                                                        <ol class="content__tag">
-                                                            <i class="fas fa-tags"></i>
-                                                            <li class="content__tag-item"><a href="">ตีท้ายครัว</a></li>
-                                                            <li class="content__tag-item"><a href="">กรรชัย</a></li>
-                                                        </ol>
-                                                    </td>
-                                                    <td class="cimg__detail">
-                                                        <span>Last Update : August 18,2018</span>
-                                                        <a href="#" class="content__badge-item badge badge-success">Active</a>
-                                                    </td>
-                                                </tr>
-                                                <tr class="tr-link">
-                                                    <td style="width: 20px;"></td>
-                                                    <td class="cimg__thumbnail">
-                                                        <div class="img-responsive-1by1">
-                                                            <img src="./img/content-demo.jpg" style="max-width: 100%; " />
-                                                        </div>
-                                                    </td>
-
-                                                    <td class="cimg__title">
-                                                        <h6>ยี่ฮัว</h6>
-                                                        <span> v1.jpg | image/jpg | 100.56 KB </span>
-                                                    </td>
-
-                                                    <td class="content__badge cimg__badge">
-                                                        <ol class="content__tag">
-                                                            <i class="fas fa-tags"></i>
-                                                            <li class="content__tag-item"><a href="">ตีท้ายครัว</a></li>
-                                                            <li class="content__tag-item"><a href="">กรรชัย</a></li>
-                                                        </ol>
-                                                    </td>
-                                                    <td class="cimg__detail">
-                                                        <span>Last Update : August 18,2018</span>
-                                                        <a href="#" class="content__badge-item badge badge-success">Active</a>
-                                                    </td>
-                                                </tr>
-                                                <tr class="tr-link">
-                                                    <td style="width: 20px;"></td>
-                                                    <td class="cimg__thumbnail">
-                                                        <div class="img-responsive-1by1">
-                                                            <img src="./img/content-demo.jpg" style="max-width: 100%; " />
-                                                        </div>
-                                                    </td>
-
-                                                    <td class="cimg__title">
-                                                        <h6>ยี่ฮัว</h6>
-                                                        <span> v1.jpg | image/jpg | 100.56 KB </span>
-                                                    </td>
-
-                                                    <td class="content__badge cimg__badge">
-                                                        <ol class="content__tag">
-                                                            <i class="fas fa-tags"></i>
-                                                            <li class="content__tag-item"><a href="">ตีท้ายครัว</a></li>
-                                                            <li class="content__tag-item"><a href="">กรรชัย</a></li>
-                                                        </ol>
-                                                    </td>
-                                                    <td class="cimg__detail">
-                                                        <span>Last Update : August 18,2018</span>
-                                                        <a href="#" class="content__badge-item badge badge-success">Active</a>
-                                                    </td>
-                                                </tr>
-                                                <tr class="tr-link">
-                                                    <td style="width: 20px;"></td>
-                                                    <td class="cimg__thumbnail">
-                                                        <div class="img-responsive-1by1">
-                                                            <img src="./img/content-demo.jpg" style="max-width: 100%; " />
-                                                        </div>
-                                                    </td>
-
-                                                    <td class="cimg__title">
-                                                        <h6>ยี่ฮัว</h6>
-                                                        <span> v1.jpg | image/jpg | 100.56 KB </span>
-                                                    </td>
-
-                                                    <td class="content__badge cimg__badge">
-                                                        <ol class="content__tag">
-                                                            <i class="fas fa-tags"></i>
-                                                            <li class="content__tag-item"><a href="">ตีท้ายครัว</a></li>
-                                                            <li class="content__tag-item"><a href="">กรรชัย</a></li>
-                                                        </ol>
-                                                    </td>
-                                                    <td class="cimg__detail">
-                                                        <span>Last Update : August 18,2018</span>
-                                                        <a href="#" class="content__badge-item badge badge-success">Active</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </form>
-                </div>
-            </div>
+                            </section>
+                        </form>
+                    </div>
+            </main>
         </div>
-
     </div>
+
+
 </body>
 
 
+
+<!-- sidenav JS -->
+<script src="./js/sidenav.js"></script>
 
 <script src="./js/vendor/jquery.min.js"></script>
 <script src="./js/vendor/bootstrap.js"></script>
